@@ -252,3 +252,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardWidth: 8
   boardHeight: 8
+  newTile: {fileID: 1186185800346938873, guid: e5e58978cae19d941a6d96e7bffb1ad0, type: 3}
