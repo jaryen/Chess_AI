@@ -252,18 +252,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardWidth: 8
   boardHeight: 8
-  whitePieces:
-  - {fileID: 8668764595285535154, guid: 35c4c48146162a043a6867927b5ad403, type: 3}
-  - {fileID: 6486218309153853365, guid: c9b39ed8a07586d49894419627236ea7, type: 3}
-  - {fileID: 2276393907307405843, guid: bc9afc7c10954004e936feef1adcb72d, type: 3}
-  - {fileID: 6115972973201680525, guid: 86d4cb905d8dd9f4395a8f7cb00c1761, type: 3}
-  - {fileID: 2944819503323772987, guid: 68446be90d612a24f864e5f196e76846, type: 3}
-  - {fileID: 1989021389926659029, guid: 5fa0ca8739e28e4418bd7e785e3e8134, type: 3}
-  blackPieces:
-  - {fileID: 3438154047791310050, guid: c71636d1a2c16f743a71fcd37dac1f33, type: 3}
-  - {fileID: 434843348463456808, guid: 7b54cb02915bb1a4e866918f13400c13, type: 3}
-  - {fileID: 5550848521420156732, guid: a49a1d2ace5a7fc4d929b67ee60e7eb1, type: 3}
-  - {fileID: 4744708216348836385, guid: ce642d328db3ada4e8ba6ad2ecdd81d1, type: 3}
-  - {fileID: 1914485982010424135, guid: 6b7c2a1306944dd42a1b5a36b59a54ce, type: 3}
-  - {fileID: 5423595969024137158, guid: a66a451c48befd2439eb2b54bff99ba4, type: 3}
   newTile: {fileID: 1186185800346938873, guid: e5e58978cae19d941a6d96e7bffb1ad0, type: 3}
