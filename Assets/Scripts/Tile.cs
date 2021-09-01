@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    private SpriteRenderer tile;
+    public SpriteRenderer tile;
     private Color tileCol;
     private Piece currentPiece;
 
     // Start is called before the first frame update
     void Start()
     {
-        tile = gameObject.AddComponent<SpriteRenderer>() as SpriteRenderer;
+        tileCol = new Color();
         currentPiece = null;
     }
 
