@@ -145,4 +145,3 @@ Received Import Request.
 Start importing Assets/Scripts/Queen.cs using Guid(8fa37fcd99fb592428b59217f3981b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90faec0a369ec1249827582cf803f33c') in 0.011148 seconds 
   Import took 0.042445 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
