@@ -476,3 +476,3028 @@ Received Import Request.
 Start importing Assets/Prefabs/Pawn.prefab using Guid(c71636d1a2c16f743a71fcd37dac1f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88fe54674911701876580a7c1955790f') in 0.158439 seconds 
   Import took 0.163129 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 73.320400 seconds.
+  path: Assets/Sprites/Black_Pawn.png
+  artifactKey: Guid(a2a23ea5e0818a14d82a9900e0abeb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Black_Pawn.png using Guid(a2a23ea5e0818a14d82a9900e0abeb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29218656537b37629ced4b4aff5de166') in 0.079175 seconds 
+  Import took 0.090721 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.148084 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.548 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1549ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1332ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (380ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (620ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (481ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.1 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2559.
+Total: 3.705200 ms (FindLiveObjects: 0.194100 ms CreateObjectMapping: 0.093500 ms MarkObjects: 3.394200 ms  DeleteObjects: 0.022200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 92.990184 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 3.712606 seconds 
+  Import took 3.744095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030115 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.010680 seconds 
+  Import took 0.015285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019336 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.014417 seconds 
+  Import took 0.019190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017907 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.011407 seconds 
+  Import took 0.017843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015550 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.021284 seconds 
+  Import took 0.027055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032519 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.012741 seconds 
+  Import took 0.016925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022201 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.013197 seconds 
+  Import took 0.020392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017470 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.027222 seconds 
+  Import took 0.031566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022526 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.011817 seconds 
+  Import took 0.017533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026775 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.019052 seconds 
+  Import took 0.023062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022729 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.012700 seconds 
+  Import took 0.018124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000745 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.009489 seconds 
+  Import took 0.015750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011187 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.012108 seconds 
+  Import took 0.017062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015578 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.009575 seconds 
+  Import took 0.015013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072396 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.013662 seconds 
+  Import took 0.017622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031511 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.010826 seconds 
+  Import took 0.015194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003795 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.009018 seconds 
+  Import took 0.016104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008878 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.013569 seconds 
+  Import took 0.019060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010991 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.014727 seconds 
+  Import took 0.019583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010270 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.012852 seconds 
+  Import took 0.017280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020610 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.015356 seconds 
+  Import took 0.023078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023108 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.011555 seconds 
+  Import took 0.016992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002606 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.013759 seconds 
+  Import took 0.018595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009031 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.010637 seconds 
+  Import took 0.014247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014286 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.008433 seconds 
+  Import took 0.013915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022718 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.009001 seconds 
+  Import took 0.013976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026668 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.014121 seconds 
+  Import took 0.020423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014982 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.014015 seconds 
+  Import took 0.019398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024959 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.010961 seconds 
+  Import took 0.015399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046401 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.011522 seconds 
+  Import took 0.016002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001442 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.008738 seconds 
+  Import took 0.013894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012419 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.009454 seconds 
+  Import took 0.013346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073842 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.011841 seconds 
+  Import took 0.016408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062188 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.009837 seconds 
+  Import took 0.013397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028144 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.012180 seconds 
+  Import took 0.020195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002685 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.008798 seconds 
+  Import took 0.013261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015245 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.009484 seconds 
+  Import took 0.014252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012783 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.009633 seconds 
+  Import took 0.015036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011346 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.013040 seconds 
+  Import took 0.019470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015159 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e06190b0 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7e062e072 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7e05f96f2 (Unity) ResolveArtifactV2
+0x00007ff7e05f04b1 (Unity) ProduceArtifactV2
+0x00007ff7e053f27e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7e05245a8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7e0619479 (Unity) ImportToObjects
+0x00007ff7e06184b8 (Unity) ImportAsset
+0x00007ff7e057a2b8 (Unity) AssetImportWorker::Import
+0x00007ff7e05cd64a (Unity) <lambda_7448d646502792db0127dc89657ec83e>::operator()
+0x00007ff7e06718d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7e0673a30 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7e06771be (Unity) asio::io_service::run
+0x00007ff7e05fa40b (Unity) RunAssetImportWorkerClientV2
+0x00007ff7e05fa460 (Unity) RunAssetImporterV2
+0x00007ff7dfac19a6 (Unity) Application::InitializeProject
+0x00007ff7e04698b2 (Unity) WinMain
+0x00007ff7e22bd3b6 (Unity) __scrt_common_main_seh
+0x00007ff833bf7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff8345e2651 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/Tile.prefab from editor
+Resuming Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(-1,00000000000000000000000000000000) -> 781850812df4e2ce4482956856e3a7e7 
+Assertion failed on expression: 'state.state == kUpToDate'
+
+Assertion failed on expression: 'state.artifactID == result'
+
+ -> (artifact id: '119fdbb393e79baef3fd6aaeaa0f9f4d') in 0.011375 seconds 
+  Import took 0.017341 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020603 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.695 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1696ms)
+		BeginReloadAssembly (202ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1381ms)
+			LoadAssemblies (186ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (468ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (533ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (394ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.2 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2561.
+Total: 5.394300 ms (FindLiveObjects: 1.032200 ms CreateObjectMapping: 0.358400 ms MarkObjects: 3.966000 ms  DeleteObjects: 0.036400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3.432852 seconds.
+  path: Assets/Prefabs/Tile.prefab
+  artifactKey: Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tile.prefab using Guid(e5e58978cae19d941a6d96e7bffb1ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb26c3f024d73a44cb67855c639dde18') in 0.077145 seconds 
+  Import took 0.095940 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009798 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.427 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1428ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1183ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (369ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (496ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (360ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.2 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2564.
+Total: 3.187500 ms (FindLiveObjects: 0.231500 ms CreateObjectMapping: 0.122000 ms MarkObjects: 2.785600 ms  DeleteObjects: 0.047000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 74.429174 seconds.
+  path: Assets/Scripts/Tile.cs
+  artifactKey: Guid(6de3127aabf611b43b0b292958016470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tile.cs using Guid(6de3127aabf611b43b0b292958016470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12700db546a3092dc36927c698911924') in 0.008061 seconds 
+  Import took 0.013162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001589 seconds.
+  path: Assets/Scripts/Tile.cs
+  artifactKey: Guid(6de3127aabf611b43b0b292958016470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tile.cs using Guid(6de3127aabf611b43b0b292958016470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12700db546a3092dc36927c698911924') in 0.004190 seconds 
+  Import took 0.009016 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004711 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.582 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1582ms)
+		BeginReloadAssembly (193ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (68ms)
+		EndReloadAssembly (1305ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (380ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (575ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (430ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.2 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2566.
+Total: 7.052000 ms (FindLiveObjects: 0.226400 ms CreateObjectMapping: 0.092400 ms MarkObjects: 6.707300 ms  DeleteObjects: 0.024100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.067750 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.363 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1363ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1145ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (363ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (483ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (344ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.2 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2568.
+Total: 3.733800 ms (FindLiveObjects: 0.208200 ms CreateObjectMapping: 0.096300 ms MarkObjects: 3.399000 ms  DeleteObjects: 0.029000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005516 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.853 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1854ms)
+		BeginReloadAssembly (153ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1619ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (433ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (730ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (157ms)
+				ProcessInitializeOnLoadAttributes (547ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.2 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2570.
+Total: 3.825000 ms (FindLiveObjects: 0.234400 ms CreateObjectMapping: 0.089100 ms MarkObjects: 3.477800 ms  DeleteObjects: 0.022400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 937.131563 seconds.
+  path: Assets/Sprites/White_Bishop.png
+  artifactKey: Guid(b965581109d63544f895ed92a3d9111c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/White_Bishop.png using Guid(b965581109d63544f895ed92a3d9111c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1f000b3a60f2d59c9e1c2565733093') in 0.094952 seconds 
+  Import took 0.117292 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006379 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.593 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1593ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1322ms)
+			LoadAssemblies (160ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (387ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (567ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (147ms)
+				ProcessInitializeOnLoadAttributes (394ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.2 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2575.
+Total: 5.242000 ms (FindLiveObjects: 0.277400 ms CreateObjectMapping: 0.098200 ms MarkObjects: 4.841300 ms  DeleteObjects: 0.023700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 363.989043 seconds.
+  path: Assets/Prefabs/BlackPawn.prefab
+  artifactKey: Guid(c71636d1a2c16f743a71fcd37dac1f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlackPawn.prefab using Guid(c71636d1a2c16f743a71fcd37dac1f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92fccaff7e25c22c549e5e7331c99467') in 0.101476 seconds 
+  Import took 0.108435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 117.516164 seconds.
+  path: Assets/Prefabs/WhitePawn.prefab
+  artifactKey: Guid(35c4c48146162a043a6867927b5ad403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WhitePawn.prefab using Guid(35c4c48146162a043a6867927b5ad403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453f62916f7bcd223a72f3a4a44e484c') in 0.032938 seconds 
+  Import took 0.054112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.072291 seconds.
+  path: Assets/Prefabs/WhiteRook.prefab
+  artifactKey: Guid(c9b39ed8a07586d49894419627236ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WhiteRook.prefab using Guid(c9b39ed8a07586d49894419627236ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '619ce61167ebdcc0041d4bf7f504f18e') in 0.032740 seconds 
+  Import took 0.070753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.172875 seconds.
+  path: Assets/Prefabs/BlackRook.prefab
+  artifactKey: Guid(7b54cb02915bb1a4e866918f13400c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlackRook.prefab using Guid(7b54cb02915bb1a4e866918f13400c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3e6b2bd9cd08d7d6564aa7619dba98') in 0.038470 seconds 
+  Import took 0.060962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.198455 seconds.
+  path: Assets/Sprites/Black_Queen.png
+  artifactKey: Guid(af64d8b47e20b714294d1c3550e0ba66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Black_Queen.png using Guid(af64d8b47e20b714294d1c3550e0ba66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04ac500c48f10af569eec114cad0928') in 0.057175 seconds 
+  Import took 0.061277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.708694 seconds.
+  path: Assets/Prefabs/WhiteKnight.prefab
+  artifactKey: Guid(bc9afc7c10954004e936feef1adcb72d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WhiteKnight.prefab using Guid(bc9afc7c10954004e936feef1adcb72d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a184e6dd088ea92fd50541081ecb693') in 0.033548 seconds 
+  Import took 0.047494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.396294 seconds.
+  path: Assets/Prefabs/BlackKnight.prefab
+  artifactKey: Guid(a49a1d2ace5a7fc4d929b67ee60e7eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlackKnight.prefab using Guid(a49a1d2ace5a7fc4d929b67ee60e7eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b979dd901240e40fb8e50a0ae03abd') in 0.024815 seconds 
+  Import took 0.032407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001849 seconds.
+  path: Assets/Prefabs/BlackKnight.prefab
+  artifactKey: Guid(a49a1d2ace5a7fc4d929b67ee60e7eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlackKnight.prefab using Guid(a49a1d2ace5a7fc4d929b67ee60e7eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b979dd901240e40fb8e50a0ae03abd') in 0.028126 seconds 
+  Import took 0.034203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.643042 seconds.
+  path: Assets/Prefabs/WhiteBishop.prefab
+  artifactKey: Guid(86d4cb905d8dd9f4395a8f7cb00c1761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WhiteBishop.prefab using Guid(86d4cb905d8dd9f4395a8f7cb00c1761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b020bc2914267c83720c8fee3edbd1') in 0.052711 seconds 
+  Import took 0.058190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.862708 seconds.
+  path: Assets/Prefabs/BlackBishop.prefab
+  artifactKey: Guid(ce642d328db3ada4e8ba6ad2ecdd81d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlackBishop.prefab using Guid(ce642d328db3ada4e8ba6ad2ecdd81d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db292a06f8dfad59129ac055eeb4ec30') in 0.034550 seconds 
+  Import took 0.041283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.023726 seconds.
+  path: Assets/Prefabs/WhiteQueen.prefab
+  artifactKey: Guid(68446be90d612a24f864e5f196e76846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WhiteQueen.prefab using Guid(68446be90d612a24f864e5f196e76846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06a95eba1f2bd9d4794141dcd4a7a01a') in 0.036265 seconds 
+  Import took 0.042424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.892872 seconds.
+  path: Assets/Prefabs/BlackQueen.prefab
+  artifactKey: Guid(6b7c2a1306944dd42a1b5a36b59a54ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlackQueen.prefab using Guid(6b7c2a1306944dd42a1b5a36b59a54ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cf63cb45740daf82c48d6c37ee2fa4') in 0.033246 seconds 
+  Import took 0.039734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.849546 seconds.
+  path: Assets/Prefabs/WhiteKing.prefab
+  artifactKey: Guid(5fa0ca8739e28e4418bd7e785e3e8134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WhiteKing.prefab using Guid(5fa0ca8739e28e4418bd7e785e3e8134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d47c2e47502e5d96541ae06eb6f9be0') in 0.039529 seconds 
+  Import took 0.045853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.385713 seconds.
+  path: Assets/Prefabs/BlackKing.prefab
+  artifactKey: Guid(a66a451c48befd2439eb2b54bff99ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BlackKing.prefab using Guid(a66a451c48befd2439eb2b54bff99ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1c2528e4ae7b92095fd3865aa416de') in 0.032167 seconds 
+  Import took 0.052491 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005789 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.590 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1591ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1360ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (423ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (94ms)
+			SetupLoadedEditorAssemblies (523ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (362ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 96.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2580.
+Total: 3.695500 ms (FindLiveObjects: 0.233500 ms CreateObjectMapping: 0.094500 ms MarkObjects: 3.343900 ms  DeleteObjects: 0.022600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005845 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.570 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1571ms)
+		BeginReloadAssembly (160ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1325ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (486ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (508ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (360ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 96.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2582.
+Total: 3.169200 ms (FindLiveObjects: 0.227800 ms CreateObjectMapping: 0.079100 ms MarkObjects: 2.810300 ms  DeleteObjects: 0.050900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
