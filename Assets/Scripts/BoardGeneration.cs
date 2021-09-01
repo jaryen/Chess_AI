@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class BoardGeneration : MonoBehaviour
 {
-    [Header("Setup")]
-    public GameObject tile;
-
     [Header("Attributes")]
     [SerializeField] private int boardWidth = 8;
     [SerializeField] private int boardHeight = 8;
@@ -14,29 +11,28 @@ public class BoardGeneration : MonoBehaviour
     private Color lightSquareCol = new Color(0.933f, 0.933f, 0.824f, 1);
     private Color darkSquareCol = new Color(0.463f, 0.588f, 0.337f, 1);
 
+    public Tile [,] gameBoard;    //2d array to store all tiles
+
     // Start is called before the first frame update
     void Start()
     {
+        gameBoard = new Tile[boardHeight, boardWidth];
         GenerateBoard();
     }
 
-    void GenerateBoard()
+    private void GenerateBoard()
     {
-        Color currTileCol = darkSquareCol;
-        for (float y = 0; y < boardHeight; y++)
-        {
-            float offSetY = transform.position.y + y;
-            for (float x = 0; x < boardWidth; x++)
-            {
-                GameObject newTile = Instantiate(tile);
-                float offSetX = transform.position.x + x;
-                newTile.transform.position = new Vector2(offSetX, offSetY);
-
-                SpriteRenderer tileSprite = newTile.GetComponent<SpriteRenderer>();
-                tileSprite.color = currTileCol;
-                currTileCol = (currTileCol == lightSquareCol) ? darkSquareCol : lightSquareCol;
+        for (int r = 0; r < boardHeight; r++) {
+            for (int c = 0; c < boardWidth; c++) {
+                Tile tile = new Tile();
+                if ((r + c) % 2 == 0){  //set color of each tile
+                    tile.SetColor(lightSquareCol);
+                }
+                else {
+                    tile.SetColor(darkSquareCol);
+                }
+                gameBoard[r, c] = tile;
             }
-            currTileCol = (currTileCol == lightSquareCol) ? darkSquareCol : lightSquareCol;
         }
     }
 
