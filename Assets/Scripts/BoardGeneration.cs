@@ -28,7 +28,7 @@ public class BoardGeneration : MonoBehaviour
             for (int x = 0; x < boardWidth; x++)
             {
                 GameObject newTile = Instantiate(tile);
-                newTile.transform.position = new Vector2(x, y);
+                newTile.transform.position = new Vector2(x-3.5f, y-3.5f);
 
                 SpriteRenderer tileSprite = newTile.GetComponent<SpriteRenderer>();
                 tileSprite.color = currTileCol;
