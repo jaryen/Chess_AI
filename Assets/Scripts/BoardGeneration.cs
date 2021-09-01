@@ -11,8 +11,8 @@ public class BoardGeneration : MonoBehaviour
     [SerializeField] private int boardWidth = 8;
     [SerializeField] private int boardHeight = 8;
 
-    private Color lightSquareCol = new Color(238, 238, 210);
-    private Color darkSquareCol = new Color(118, 150, 86);
+    private Color lightSquareCol = new Color(0.933f, 0.933f, 0.824f, 1);
+    private Color darkSquareCol = new Color(0.463f, 0.588f, 0.337f, 1);
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,7 @@ public class BoardGeneration : MonoBehaviour
 
     void GenerateBoard()
     {
+        Color currTileCol = darkSquareCol;
         for (int y = 0; y < boardHeight; y++)
         {
             for (int x = 0; x < boardWidth; x++)
@@ -30,8 +31,11 @@ public class BoardGeneration : MonoBehaviour
                 newTile.transform.position = new Vector2(x, y);
 
                 SpriteRenderer tileSprite = newTile.GetComponent<SpriteRenderer>();
-                tileSprite.color = 
+                tileSprite.color = currTileCol;
+
+                currTileCol = (currTileCol == lightSquareCol) ? darkSquareCol : lightSquareCol;
             }
+            currTileCol = (currTileCol == lightSquareCol) ? darkSquareCol : lightSquareCol;
         }
     }
 
