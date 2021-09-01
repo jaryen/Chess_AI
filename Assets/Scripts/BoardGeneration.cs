@@ -14,7 +14,6 @@ public class BoardGeneration : MonoBehaviour
     private Color darkSquareCol = new Color(0.463f, 0.588f, 0.337f, 1);
 
     public GameObject [,] gameBoard;    //2d array to store all tiles
-
     public GameObject newTile;
 
     // Start is called before the first frame update
@@ -23,6 +22,7 @@ public class BoardGeneration : MonoBehaviour
         gameBoard = new GameObject[boardHeight, boardWidth];
         GenerateBoard();
 
+        // Setup the pieces
         for (int r = 0; r < boardHeight; r++)
         {
             for (int c = 0; c < boardWidth; c++)
@@ -62,22 +62,15 @@ public class BoardGeneration : MonoBehaviour
         // Set pawns
         if (r == 1 || r == 6)
         {
-            if (r == 1)
-            {
-                piece = Instantiate(whitePieces[0]);
-            }
-            else
-            {
-                piece = Instantiate(blackPieces[0]);
-                isWhite = false;
-            }
+            piece = (r == 1) ? Instantiate(whitePieces[0]) : Instantiate(blackPieces[0]);
+            isWhite = (r == 1) ? true : false;
         }
-        else if (r == 0 || r == 7)
+        else if (r == 0 || r == 7) // All other pieces
         {
             if (c == 0 || c == 7)
             {
                 // Set rooks
-                //piece = (r == 0) ? Instantiate(whitePieces[1]) : Instantiate(blackPieces[1]);
+                piece = (r == 0) ? Instantiate(whitePieces[1]) : Instantiate(blackPieces[1]);
             }
             else if (c == 1 || c == 6)
             {
