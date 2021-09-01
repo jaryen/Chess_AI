@@ -14,7 +14,7 @@ public class Pawn : Piece
     public void findMoves() 
     {
         if (isWhite) {
-            validMoves.Add();
+            //validMoves.Add();
         }
     }
 

@@ -22,13 +22,25 @@ public class BoardGeneration : MonoBehaviour
     {
         gameBoard = new GameObject[boardHeight, boardWidth];
         GenerateBoard();
+
+        for (int r = 0; r < boardHeight; r++)
+        {
+            for (int c = 0; c < boardWidth; c++)
+            {
+                SetPiecePosition(r, c);
+            }
+        }
     }
 
     private void GenerateBoard()
     {
         for (int r = 0; r < boardHeight; r++) {
+            float yOffSet = r + transform.position.y;
             for (int c = 0; c < boardWidth; c++) {
-                GameObject tile = Instantiate(newTile, new Vector2(r - 3.5f, c - 3.5f), Quaternion.identity);
+                float xOffSet = c + transform.position.y;
+                GameObject tile = Instantiate(newTile, new Vector2(xOffSet, yOffSet), Quaternion.identity);
+
+                // Set tile colors
                 Tile tileScript = tile.GetComponent<Tile>();
                 if ((r + c) % 2 == 0){  //set color of each tile
                     tileScript.SetColor(darkSquareCol);
@@ -36,14 +48,17 @@ public class BoardGeneration : MonoBehaviour
                 else { // Odd tile
                     tileScript.SetColor(lightSquareCol);
                 }
+
                 gameBoard[r, c] = tile;
             }
         }
     }
 
-    private void SetPiecePosition(int r, int c, Tile tileScript)
+    private void SetPiecePosition(int r, int c)
     {
-        GameObject piece;
+        GameObject piece = null;
+        bool isWhite = true;
+
         // Set pawns
         if (r == 1 || r == 6)
         {
@@ -54,71 +69,43 @@ public class BoardGeneration : MonoBehaviour
             else
             {
                 piece = Instantiate(blackPieces[0]);
+                isWhite = false;
             }
         }
         else if (r == 0 || r == 7)
         {
-            // White pieces
-            if (r == 0)
+            if (c == 0 || c == 7)
             {
-                if (c == 0 || c == 7)
-                {
-                    // Set rooks
-                    piece = Instantiate(whitePieces[1]);
-                }
-                else if (c == 1 || c == 6)
-                {
-                    // Set knights
-                    piece = Instantiate(whitePieces[2]);
-                }
-                else if (c == 2 || c == 5)
-                {
-                    // Set bishops
-                    piece = Instantiate(whitePieces[3]);
-                }
-                else if (c == 3)
-                {
-                    // Set queen
-                    piece = Instantiate(whitePieces[4]);
-                }
-                else
-                {
-                    // Set king
-                    piece = Instantiate(whitePieces[5]);
-                }
-                piece.transform.position = gameBoard[r, c].transform.position;
+                // Set rooks
+                //piece = (r == 0) ? Instantiate(whitePieces[1]) : Instantiate(blackPieces[1]);
             }
-            else // Black pieces
+            else if (c == 1 || c == 6)
             {
-                if (c == 0 || c == 7)
-                {
-                    // Set rooks
-                    piece = Instantiate(blackPieces[1]);
-                }
-                else if (c == 1 || c == 6)
-                {
-                    // Set knights
-                    piece = Instantiate(blackPieces[2]);
-
-                }
-                else if (c == 2 || c == 5)
-                {
-                    // Set bishops
-                    piece = Instantiate(blackPieces[3]);
-
-                }
-                else if (c == 3)
-                {
-                    // Set queen
-                    piece = Instantiate(blackPieces[4]);
-                }
-                else
-                {
-                    // Set king
-                    piece = Instantiate(blackPieces[5]);
-                }
+                // Set knights
+                piece = (r == 0) ? Instantiate(whitePieces[2]) : Instantiate(blackPieces[2]);
             }
+            else if (c == 2 || c == 5)
+            {
+                // Set bishops
+                piece = (r == 0) ? Instantiate(whitePieces[3]) : Instantiate(blackPieces[3]);
+
+            }
+            else if (c == 3)
+            {
+                // Set queen
+                piece = (r == 0) ? Instantiate(whitePieces[4]) : Instantiate(blackPieces[4]);
+            }
+            else
+            {
+                // Set king
+                piece = (r == 0) ? Instantiate(whitePieces[5]) : Instantiate(blackPieces[5]);
+            }
+        }
+        if (piece)
+        {
             piece.transform.position = gameBoard[r, c].transform.position;
+            Piece p = piece.GetComponent<Piece>();
+            p.isWhite = isWhite;
         }
     }
 
