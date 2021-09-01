@@ -58,15 +58,16 @@ public class BoardGeneration : MonoBehaviour
     {
         GameObject piece = null;
         bool isWhite = true;
-
-        // Set pawns
+        
         if (r == 1 || r == 6)
         {
+            // Set pawns
             piece = (r == 1) ? Instantiate(whitePieces[0]) : Instantiate(blackPieces[0]);
             isWhite = (r == 1) ? true : false;
         }
         else if (r == 0 || r == 7) // All other pieces
         {
+            isWhite = (r == 0) ? true : false;
             if (c == 0 || c == 7)
             {
                 // Set rooks
@@ -96,9 +97,15 @@ public class BoardGeneration : MonoBehaviour
         }
         if (piece)
         {
+            // Set current piece to tile's position and
+            // whether it is white or black
             piece.transform.position = gameBoard[r, c].transform.position;
             Piece p = piece.GetComponent<Piece>();
             p.isWhite = isWhite;
+
+            // Set current tile's current piece as piece
+            Tile t = gameBoard[r, c].GetComponent<Tile>();
+            t.SetCurrentPiece(p);
         }
     }
 
