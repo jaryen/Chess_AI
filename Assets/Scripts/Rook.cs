@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bishop : Piece
+public class Rook : Piece
 {
     // Start is called before the first frame update
     void Start()
@@ -13,11 +13,12 @@ public class Bishop : Piece
     //finds all possible moves
     public void findMoves()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
