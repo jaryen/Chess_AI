@@ -23,16 +23,17 @@ public class BoardGeneration : MonoBehaviour
     void GenerateBoard()
     {
         Color currTileCol = darkSquareCol;
-        for (int y = 0; y < boardHeight; y++)
+        for (float y = 0; y < boardHeight; y++)
         {
-            for (int x = 0; x < boardWidth; x++)
+            float offSetY = transform.position.y + y;
+            for (float x = 0; x < boardWidth; x++)
             {
                 GameObject newTile = Instantiate(tile);
-                newTile.transform.position = new Vector2(x, y);
+                float offSetX = transform.position.x + x;
+                newTile.transform.position = new Vector2(offSetX, offSetY);
 
                 SpriteRenderer tileSprite = newTile.GetComponent<SpriteRenderer>();
                 tileSprite.color = currTileCol;
-
                 currTileCol = (currTileCol == lightSquareCol) ? darkSquareCol : lightSquareCol;
             }
             currTileCol = (currTileCol == lightSquareCol) ? darkSquareCol : lightSquareCol;
