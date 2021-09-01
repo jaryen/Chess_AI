@@ -19,8 +19,7 @@ public class Tile : MonoBehaviour
     public void SetColor(Color c)
     {
         tileCol = c;
-        SpriteRenderer sr = tile.GetComponent<SpriteRenderer>();
-        sr.color = tileCol;
+        tile.color = tileCol;
     }
 
     public Color GetColor()
