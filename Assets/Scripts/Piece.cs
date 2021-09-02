@@ -28,6 +28,7 @@ public class Piece : BoardGeneration
 
     //moves the piece to the selected square, return true if successful, else return false
     public bool moveToSquare(GameObject dest) {
+        Debug.Log("Called moveToSquare");
         foreach (GameObject i in validMoves) {
             if (i == dest) {
                 if (i.GetComponent<Tile>().GetCurrentPiece() != null){  //check to see if a piece would be taken with this move
@@ -39,6 +40,7 @@ public class Piece : BoardGeneration
                 return true;
             }
         }
+        
         return false;
     }
 

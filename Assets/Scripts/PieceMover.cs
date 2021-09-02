@@ -44,15 +44,27 @@ public class PieceMover : MonoBehaviour
             // Clicked on the tile
             if (Input.GetMouseButtonDown(0))
             {
-                if (selectedPiece)
+                selectedTile = tileObject.GetComponent<Tile>();
+
+                // If piece already selected
+                if (selectedPiece) 
                 {
-                    //destTile = tileObject.GetComponent<Tile>();
-                    selectedPiece.moveToSquare(tileObject);
+                    // First check if newly selected tile has a piece and is same 
+                    // color. If so, set the new piece to the piece on new tile.
+                    if (selectedTile.GetCurrentPiece() && selectedPiece.isWhite 
+                        == selectedTile.GetCurrentPiece().isWhite)
+                    {
+                        selectedPiece = selectedTile.GetCurrentPiece();
+                    }
+                    // If newly selected tile has NO piece on it
+                    else if (!selectedTile.GetCurrentPiece())
+                    {
+                        //selectedPiece.moveToSquare(tileObject);
+                        selectedPiece.gameObject.transform.position = tileObject.transform.position;
+                    }
                 }
-                else // no piece selected yet
+                else // No piece selected yet
                 {
-                    Debug.Log("Selected tile!");
-                    selectedTile = tileObject.GetComponent<Tile>();
                     selectedPiece = selectedTile.GetCurrentPiece();
                 }
             }
