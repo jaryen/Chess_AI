@@ -25,27 +25,25 @@ public class Pawn : Piece
     {        
         //forward movement detection
         //pawns cannot move forward if a piece is blocking it
-        if (gameBoard[this.row + movementModifier, this.col].GetComponent<Tile>().GetCurrentPiece() == null)
-        {
+        if (gameBoard[this.row + movementModifier, this.col].GetComponent<Tile>().GetCurrentPiece() == null ||
+            gameBoard[this.row + movementModifier, this.col].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite) {
             validMoves.Add(gameBoard[this.row + movementModifier, this.col]);
         }
 
         //left out of bounds detection
         //pawns can only move diagonally if there is a piece to be taken
-        if (this.col - 1 >= 0)
-        {
-            if (gameBoard[this.row + movementModifier, this.col - 1].GetComponent<Tile>().GetCurrentPiece() != null)
-            {
+        if (this.col - 1 >= 0) {
+            if (gameBoard[this.row + movementModifier, this.col - 1].GetComponent<Tile>().GetCurrentPiece() != null ||
+                gameBoard[this.row + movementModifier, this.col - 1].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite) {
                 validMoves.Add(gameBoard[this.row + movementModifier, this.col - 1]);
             }
         }
 
         //left out of bounds detection
         //pawns can only move diagonally if there is a piece to be taken
-        if (this.col + 1 <= 7)
-        {
-            if (gameBoard[this.row + movementModifier, this.col + 1].GetComponent<Tile>().GetCurrentPiece() != null)
-            {
+        if (this.col + 1 <= 7) {
+            if (gameBoard[this.row + movementModifier, this.col + 1].GetComponent<Tile>().GetCurrentPiece() != null ||
+                gameBoard[this.row + movementModifier, this.col + 1].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite) {
                 validMoves.Add(gameBoard[this.row + movementModifier, this.col + 1]);
             }
         }
