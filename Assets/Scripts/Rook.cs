@@ -32,7 +32,7 @@ public class Rook : Piece
 
         // Right movement
         int checkCol = col+1;
-        while (col <= 7 && gameBoard[checkRow, col].GetComponent<Tile>().GetCurrentPiece() == null)
+        while (col <= 7 && gameBoard[row, checkCol].GetComponent<Tile>().GetCurrentPiece() == null)
         {
             validMoves.Add(gameBoard[row, checkCol]);
             checkCol++;
@@ -40,7 +40,7 @@ public class Rook : Piece
 
         // Left movement
         checkCol = col-1;
-        while (col >= 0 && gameBoard[checkRow, col].GetComponent<Tile>().GetCurrentPiece() == null)
+        while (col >= 0 && gameBoard[row, checkCol].GetComponent<Tile>().GetCurrentPiece() == null)
         {
             validMoves.Add(gameBoard[row, checkCol]);
             checkCol--;
