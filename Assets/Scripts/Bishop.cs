@@ -13,7 +13,6 @@ public class Bishop : Piece
     //finds all possible moves
     public void findMoves()
     {
-
     }
 
     // Update is called once per frame

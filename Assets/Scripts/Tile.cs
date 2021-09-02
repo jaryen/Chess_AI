@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
+    [Header("Setup")]
     public SpriteRenderer tile;
+
     private Color tileCol;
     private Piece currentPiece;
 
@@ -12,7 +14,6 @@ public class Tile : MonoBehaviour
     void Start()
     {
         tileCol = new Color();
-        currentPiece = null;
     }
 
     // Set color of tile
