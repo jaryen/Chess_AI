@@ -14,35 +14,35 @@ public class Rook : Piece
     public void findMoves()
     {
         // Forward movement
-        int checkRow = row+1;
-        while (row <= 7 && gameBoard[checkRow, col].GetComponent<Tile>().GetCurrentPiece() == null) {
+        int checkRow = this.row + 1;
+        while (checkRow <= 7 && (gameBoard[checkRow, col].GetComponent<Tile>().GetCurrentPiece() == null || gameBoard[checkRow, col].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite)) {
             // if hit a piece in front
-            validMoves.Add(gameBoard[checkRow, col]);
+            validMoves.Add(gameBoard[checkRow, this.col]);
             checkRow++;
         }
 
         // Backwards movement
-        checkRow = row-1;
-        while (row >= 0 && gameBoard[checkRow, col].GetComponent<Tile>().GetCurrentPiece() == null)
+        checkRow = this.row - 1;
+        while (checkRow >= 0 && (gameBoard[checkRow, col].GetComponent<Tile>().GetCurrentPiece() == null || gameBoard[checkRow, col].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite))
         {
             // if hit a piece in front
-            validMoves.Add(gameBoard[checkRow, col]);
+            validMoves.Add(gameBoard[checkRow, this.col]);
             checkRow--;
         }
 
         // Right movement
-        int checkCol = col+1;
-        while (col <= 7 && gameBoard[row, checkCol].GetComponent<Tile>().GetCurrentPiece() == null)
+        int checkCol = this.col + 1;
+        while (checkCol <= 7 && (gameBoard[this.row, checkCol].GetComponent<Tile>().GetCurrentPiece() == null || gameBoard[this.row, checkCol].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite))
         {
-            validMoves.Add(gameBoard[row, checkCol]);
+            validMoves.Add(gameBoard[this.row, checkCol]);
             checkCol++;
         }
 
         // Left movement
-        checkCol = col-1;
-        while (col >= 0 && gameBoard[row, checkCol].GetComponent<Tile>().GetCurrentPiece() == null)
+        checkCol = this.col - 1;
+        while (checkCol >= 0 && (gameBoard[this.row, checkCol].GetComponent<Tile>().GetCurrentPiece() == null || gameBoard[this.row, checkCol].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite))
         {
-            validMoves.Add(gameBoard[row, checkCol]);
+            validMoves.Add(gameBoard[this.row, checkCol]);
             checkCol--;
         }
     }
