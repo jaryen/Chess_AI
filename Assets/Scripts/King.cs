@@ -14,7 +14,7 @@ public class King : Piece
     }
 
     //finds all possible moves
-    public void findMoves()
+    public override void findMoves()
     {
         if (row != 7) {  //if the king is not in the top row
             if (gameBoard[this.row + 1, this.col - 1].GetComponent<Tile>().GetCurrentPiece() == null || 

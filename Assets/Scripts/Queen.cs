@@ -13,7 +13,7 @@ public class Queen : Piece
     }
 
     //finds all possible moves
-    public void findMoves()
+    public override void findMoves()
     {
         //check top left
         dRow = this.row + 1;

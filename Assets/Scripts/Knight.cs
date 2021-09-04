@@ -12,7 +12,7 @@ public class Knight : Piece
     }
 
     //finds all possible moves
-    public void findMoves()
+    public override void findMoves()
     {
         if (this.row <= 5) { //knight can move up
             //check top left

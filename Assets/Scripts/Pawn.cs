@@ -21,7 +21,7 @@ public class Pawn : Piece
     }
 
     //finds all possible moves
-    public void findMoves() 
+    public override void findMoves() 
     {        
         //forward movement detection
         //pawns cannot move forward if a piece is blocking it

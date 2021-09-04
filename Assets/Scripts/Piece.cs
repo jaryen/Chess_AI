@@ -44,6 +44,10 @@ public class Piece : BoardGeneration
         return false;
     }
 
+    public virtual void findMoves() { 
+        //leave empty
+    }
+
     // Update is called once per frame
     void Update()
     {
