@@ -39,33 +39,43 @@ public class PieceMover : MonoBehaviour
         // If mouse is over a tile collider
         if (hit.collider)
         {
+            // Get the tile gameobject being hovered over
             GameObject tileObject = hit.transform.root.gameObject;
 
             // Clicked on the tile
             if (Input.GetMouseButtonDown(0))
             {
+                // Get the selected tile's script component
                 selectedTile = tileObject.GetComponent<Tile>();
 
                 // If piece already selected
-                if (selectedPiece) 
+                if (selectedPiece != null)
                 {
                     // First check if newly selected tile has a piece and is same 
-                    // color. If so, set the new piece to the piece on new tile.
-                    if (selectedTile.GetCurrentPiece() && selectedPiece.isWhite 
+                    // color. If so, set the current piece to the piece on new tile.
+                    if (selectedTile.GetCurrentPiece() != null && selectedPiece.isWhite
                         == selectedTile.GetCurrentPiece().isWhite)
                     {
                         selectedPiece = selectedTile.GetCurrentPiece();
+                        selectedPiece.findMoves();
                     }
                     // If newly selected tile has NO piece on it
-                    else if (!selectedTile.GetCurrentPiece())
+                    else if (selectedTile.GetCurrentPiece() == null)
                     {
-                        //selectedPiece.moveToSquare(tileObject);
-                        selectedPiece.gameObject.transform.position = tileObject.transform.position;
+                        Debug.Log("Move to square called");
+                        selectedPiece.moveToSquare(tileObject);
+                        selectedPiece.clearMoves();
+                        selectedPiece = null;
+                    }
+                    else
+                    {
+                        selectedPiece = null;
                     }
                 }
                 else // No piece selected yet
                 {
                     selectedPiece = selectedTile.GetCurrentPiece();
+                    selectedPiece.findMoves();
                 }
             }
         }

@@ -13,7 +13,7 @@ public class Rook : Piece
     }
 
     //finds all possible moves
-    public void findMoves()
+    public override void findMoves()
     {
         // Forward movement
         checkRow = this.row + 1;

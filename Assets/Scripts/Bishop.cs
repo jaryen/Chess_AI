@@ -13,7 +13,7 @@ public class Bishop : Piece
     }
 
     //finds all possible moves
-    public void findMoves()
+    public override void findMoves()
     {
         //check top left
         checkRow = this.row + 1;
