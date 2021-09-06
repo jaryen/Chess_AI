@@ -22,8 +22,7 @@ public class Pawn : Piece
 
     //finds all possible moves
     public override void findMoves() 
-    {
-        Debug.Log("Found pawn moves");
+    {        
         //forward movement detection
         //pawns cannot move forward if a piece is blocking it
         if (gameBoard[this.row + movementModifier, this.col].GetComponent<Tile>().GetCurrentPiece() == null ||
