@@ -37,7 +37,7 @@ public class PieceMover : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(mousePos, new Vector2(0, 0), 0.1f, tileMask, -100, 100);
 
         // If mouse is over a tile collider
-        if (hit.collider)
+        if (hit.collider != null)
         {
             // Get the tile gameobject being hovered over
             GameObject tileObject = hit.transform.root.gameObject;
@@ -62,10 +62,9 @@ public class PieceMover : MonoBehaviour
                     // If newly selected tile has NO piece on it
                     else if (selectedTile.GetCurrentPiece() == null)
                     {
-                        Debug.Log("Move to square called");
+                        Debug.Log("Called function moveToSquare");
                         selectedPiece.moveToSquare(tileObject);
                         selectedPiece.clearMoves();
-                        selectedPiece = null;
                     }
                     else
                     {

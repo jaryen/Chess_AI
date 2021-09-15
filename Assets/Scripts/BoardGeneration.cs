@@ -13,7 +13,7 @@ public class BoardGeneration : MonoBehaviour
     private Color lightSquareCol = new Color(0.933f, 0.933f, 0.824f, 1);
     private Color darkSquareCol = new Color(0.463f, 0.588f, 0.337f, 1);
 
-    public GameObject [,] gameBoard;    //2d array to store all tiles
+    public GameObject[,] gameBoard;    //2d array to store all tiles
     public GameObject newTile;
 
     // Start is called before the first frame update
@@ -102,6 +102,8 @@ public class BoardGeneration : MonoBehaviour
             piece.transform.position = gameBoard[r, c].transform.position;
             Piece p = piece.GetComponent<Piece>();
             p.isWhite = isWhite;
+            p.row = r;
+            p.col = c;
 
             // Set current tile's current piece as piece
             Tile t = gameBoard[r, c].GetComponent<Tile>();

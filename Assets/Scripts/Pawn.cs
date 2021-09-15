@@ -7,8 +7,9 @@ public class Pawn : Piece
     private int movementModifier; //used to determine what row is "forward"
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         //set movement modifiers
         if (isWhite)
         {
@@ -22,29 +23,34 @@ public class Pawn : Piece
 
     //finds all possible moves
     public override void findMoves() 
-    {        
+    {
+        Debug.Log("Current tile's name: " + boardGeneration.gameBoard[this.row, this.col].name);
         //forward movement detection
         //pawns cannot move forward if a piece is blocking it
-        if (gameBoard[this.row + movementModifier, this.col].GetComponent<Tile>().GetCurrentPiece() == null ||
-            gameBoard[this.row + movementModifier, this.col].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite) {
-            validMoves.Add(gameBoard[this.row + movementModifier, this.col]);
+        Tile forwardTile = boardGeneration.gameBoard[this.row + movementModifier, this.col].GetComponent<Tile>();
+        if (forwardTile.GetCurrentPiece() == null ||
+            forwardTile.GetCurrentPiece().isWhite != this.isWhite) {
+            Debug.Log("Added forward movement");
+            validMoves.Add(forwardTile);
         }
 
         //left out of bounds detection
         //pawns can only move diagonally if there is a piece to be taken
+        Tile leftForwardTile = boardGeneration.gameBoard[this.row + movementModifier, this.col - 1].GetComponent<Tile>();
         if (this.col - 1 >= 0) {
-            if (gameBoard[this.row + movementModifier, this.col - 1].GetComponent<Tile>().GetCurrentPiece() != null ||
-                gameBoard[this.row + movementModifier, this.col - 1].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite) {
-                validMoves.Add(gameBoard[this.row + movementModifier, this.col - 1]);
+            if (leftForwardTile.GetCurrentPiece() != null ||
+                leftForwardTile.GetCurrentPiece().isWhite != this.isWhite) {
+                validMoves.Add(leftForwardTile);
             }
         }
 
         //left out of bounds detection
         //pawns can only move diagonally if there is a piece to be taken
+        Tile rightForwardTile = boardGeneration.gameBoard[this.row + movementModifier, this.col + 1].GetComponent<Tile>();
         if (this.col + 1 <= 7) {
-            if (gameBoard[this.row + movementModifier, this.col + 1].GetComponent<Tile>().GetCurrentPiece() != null ||
-                gameBoard[this.row + movementModifier, this.col + 1].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite) {
-                validMoves.Add(gameBoard[this.row + movementModifier, this.col + 1]);
+            if (rightForwardTile.GetCurrentPiece() != null ||
+                rightForwardTile.GetCurrentPiece().isWhite != this.isWhite) {
+                validMoves.Add(rightForwardTile);
             }
         }
     }

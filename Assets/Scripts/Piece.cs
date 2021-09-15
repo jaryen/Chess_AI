@@ -10,10 +10,13 @@ public class Piece : BoardGeneration
     [SerializeField] public int row;
     [SerializeField] public int col;
 
+    protected BoardGeneration boardGeneration;
+
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
-        
+        GameObject boardGeneratorGO = GameObject.Find("BoardGenerator");
+        boardGeneration = boardGeneratorGO.GetComponent<BoardGeneration>();
     }
 
     //adds a valid move into the validMoves list
@@ -32,24 +35,33 @@ public class Piece : BoardGeneration
     }
 
     //moves the piece to the selected square, return true if successful, else return false
-    public bool moveToSquare(GameObject dest) {
-        foreach (GameObject i in validMoves) {
-            if (i == dest) {
-                if (i.GetComponent<Tile>().GetCurrentPiece() != null){  //check to see if a piece would be taken with this move
-                    Destroy(dest.GetComponent<Tile>().GetCurrentPiece());
+    public bool moveToSquare(GameObject dest) 
+    {
+        foreach (GameObject i in validMoves) 
+        {
+            // If the current valid tile is equal to 
+            // the destination tile
+            if (i == dest)
+            {
+                Tile currValidTile = i.GetComponent<Tile>();
+                Tile destTile = dest.GetComponent<Tile>();
+
+                // check to see if a piece would be taken with this move
+                if (currValidTile.GetCurrentPiece() != null)
+                {
+                    Destroy(destTile.GetCurrentPiece());
                 }
-                else{   //move the piece
-                    dest.GetComponent<Tile>().SetCurrentPiece(this.GetComponent<Tile>().GetCurrentPiece());
+                else // move the piece
+                {
+                    Tile currTile = this.GetComponent<Tile>();
+                    Debug.Log("Curr Tile: " + currTile.name);
+                    destTile.SetCurrentPiece(currTile.GetCurrentPiece());
                 }
                 return true;
             }
         }
         
         return false;
-    }
-
-    public virtual void findMoves() { 
-        //leave empty
     }
 
     // Update is called once per frame
