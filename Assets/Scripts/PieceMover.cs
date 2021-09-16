@@ -13,7 +13,6 @@ public class PieceMover : MonoBehaviour
     [Header("During Game")]
     private Tile selectedTile;
     private Piece selectedPiece;
-    private Tile destTile;
 
     // Start is called before the first frame update
     void Start()
@@ -56,17 +55,20 @@ public class PieceMover : MonoBehaviour
                     if (selectedTile.GetCurrentPiece() != null && selectedPiece.isWhite
                         == selectedTile.GetCurrentPiece().isWhite)
                     {
+                        selectedPiece.clearMoves(); // Clear the old selected piece's moves
                         selectedPiece = selectedTile.GetCurrentPiece();
                         selectedPiece.findMoves();
                     }
                     // If newly selected tile has NO piece on it
-                    else if (selectedTile.GetCurrentPiece() == null)
+                    else if (selectedPiece.validMoves.Contains(selectedTile) && 
+                        selectedTile.GetCurrentPiece() == null)
                     {
-                        Debug.Log("Called function moveToSquare");
-                        selectedPiece.moveToSquare(tileObject);
+                        selectedPiece.moveToSquare(selectedTile);
                         selectedPiece.clearMoves();
                     }
-                    else
+                    // If a tile outside of selected piece's valid moves is clicked,
+                    // set the selected piece as null
+                    else if (!selectedPiece.validMoves.Contains(selectedTile))
                     {
                         selectedPiece = null;
                     }

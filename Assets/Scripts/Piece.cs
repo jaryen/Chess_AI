@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Piece : BoardGeneration
 {
-    public ArrayList validMoves;   //stores all possible moves for this piece
+    public ArrayList validMoves = new ArrayList();   //stores all possible moves for this piece
     public bool taken = false;
     [SerializeField] public bool isWhite;
     [SerializeField] public int row;
@@ -35,32 +35,28 @@ public class Piece : BoardGeneration
     }
 
     //moves the piece to the selected square, return true if successful, else return false
-    public bool moveToSquare(GameObject dest) 
+    public bool moveToSquare(Tile dest) 
     {
         Debug.Log("0");
         Debug.Log("# of Valid Moves: " + validMoves.Count.ToString());
-        foreach (GameObject i in validMoves) 
+        foreach (Tile currValidTile in validMoves) 
         {
             Debug.Log("1");
             // If the current valid tile is equal to 
             // the destination tile
-            if (i == dest)
+            if (currValidTile == dest)
             {
                 Debug.Log("2");
-                Tile currValidTile = i.GetComponent<Tile>();
-                Tile destTile = dest.GetComponent<Tile>();
-
                 // check to see if a piece would be taken with this move
                 if (currValidTile.GetCurrentPiece() != null)
                 {
                     Debug.Log("3");
-
-                    Destroy(destTile.GetCurrentPiece());
+                    Destroy(dest.GetCurrentPiece());
                 }
                 else // move the piece
                 {
                     Debug.Log("4");
-                    destTile.SetCurrentPiece(this);
+                    dest.SetCurrentPiece(this);
                 }
                 return true;
             }
