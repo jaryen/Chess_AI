@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Piece : BoardGeneration
+public abstract class Piece : BoardGeneration
 {
     public ArrayList validMoves = new ArrayList();   //stores all possible moves for this piece
     public bool taken = false;
@@ -29,41 +29,10 @@ public class Piece : BoardGeneration
         validMoves.Clear();
     }
 
-    public virtual void findMoves()
-    {
-        // Find all valid moves for piece
-    }
+    public abstract void findMoves();
 
     //moves the piece to the selected square, return true if successful, else return false
-    public bool moveToSquare(Tile dest) 
-    {
-        Debug.Log("0");
-        Debug.Log("# of Valid Moves: " + validMoves.Count.ToString());
-        foreach (Tile currValidTile in validMoves) 
-        {
-            Debug.Log("1");
-            // If the current valid tile is equal to 
-            // the destination tile
-            if (currValidTile == dest)
-            {
-                Debug.Log("2");
-                // check to see if a piece would be taken with this move
-                if (currValidTile.GetCurrentPiece() != null)
-                {
-                    Debug.Log("3");
-                    Destroy(dest.GetCurrentPiece());
-                }
-                else // move the piece
-                {
-                    Debug.Log("4");
-                    dest.SetCurrentPiece(this);
-                }
-                return true;
-            }
-        }
-        
-        return false;
-    }
+    public abstract bool moveToSquare(Tile dest);
 
     // Update is called once per frame
     void Update()

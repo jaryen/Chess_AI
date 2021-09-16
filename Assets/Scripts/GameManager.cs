@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : Piece
+public class GameManager : BoardGeneration
 {
     private enum turn { 
         white,

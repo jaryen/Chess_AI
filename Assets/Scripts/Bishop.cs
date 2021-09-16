@@ -7,9 +7,9 @@ public class Bishop : Piece
     private int checkRow, checkCol = 0;
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
-
+        base.Start();
     }
 
     //finds all possible moves
@@ -18,9 +18,11 @@ public class Bishop : Piece
         //check top left
         checkRow = this.row + 1;
         checkCol = this.col - 1;
-        while (checkRow <= 7 && (gameBoard[checkRow, checkCol].GetComponent<Tile>().GetCurrentPiece() == null || gameBoard[checkRow, checkCol].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite))
+        Tile tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+        while (checkRow <= 7 && (tile.GetCurrentPiece() == null || 
+               tile.GetCurrentPiece().isWhite != this.isWhite))
         {
-            validMoves.Add(gameBoard[checkRow, checkCol]);
+            validMoves.Add(tile);
             checkRow++;
             checkCol--;
         }
@@ -28,9 +30,11 @@ public class Bishop : Piece
         //check top right
         checkRow = this.row + 1;
         checkCol = this.col + 1;
-        while (checkRow >= 0 && (gameBoard[checkRow, checkCol].GetComponent<Tile>().GetCurrentPiece() == null || gameBoard[checkRow, checkCol].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite))
+        tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+        while (checkRow >= 0 && (tile.GetCurrentPiece() == null ||
+               tile.GetCurrentPiece().isWhite != this.isWhite))
         {
-            validMoves.Add(gameBoard[checkRow, checkCol]);
+            validMoves.Add(tile);
             checkRow++;
             checkCol++;
         }
@@ -38,9 +42,11 @@ public class Bishop : Piece
         //check bottom left
         checkRow = this.row - 1;
         checkCol = this.col - 1;
-        while (checkCol <= 7 && (gameBoard[checkRow, checkCol].GetComponent<Tile>().GetCurrentPiece() == null || gameBoard[checkRow, checkCol].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite))
+        tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+        while (checkCol <= 7 && (tile.GetCurrentPiece() == null ||
+               tile.GetCurrentPiece().isWhite != this.isWhite))
         {
-            validMoves.Add(gameBoard[checkRow, checkCol]);
+            validMoves.Add(tile);
             checkRow--;
             checkCol--;
         }
@@ -48,12 +54,37 @@ public class Bishop : Piece
         //check bottom right
         checkRow = this.row - 1;
         checkCol = this.col + 1;
-        while (checkCol >= 0 && (gameBoard[checkRow, checkCol].GetComponent<Tile>().GetCurrentPiece() == null || gameBoard[checkRow, checkCol].GetComponent<Tile>().GetCurrentPiece().isWhite != this.isWhite))
+        tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+        while (checkCol >= 0 && (tile.GetCurrentPiece() == null ||
+               tile.GetCurrentPiece().isWhite != this.isWhite))
         {
-            validMoves.Add(gameBoard[checkRow, checkCol]);
+            validMoves.Add(tile);
             checkRow--;
             checkCol++;
         }
+    }
+
+    public override bool moveToSquare(Tile dest)
+    {
+        foreach (Tile src in validMoves)
+        {
+            // If the current valid tile is equal to 
+            // the destination tile
+            if (src == dest)
+            {
+                // check to see if a piece would be taken with this move
+                if (src.GetCurrentPiece() != null)
+                {
+                    Destroy(dest.GetCurrentPiece());
+                }
+                else // move the piece
+                {
+                    dest.SetCurrentPiece(this);
+                }
+                return true;
+            }
+        }
+        return false;
     }
 
     // Update is called once per frame
