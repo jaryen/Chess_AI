@@ -11,6 +11,7 @@ public class PieceMover : MonoBehaviour
     public LayerMask tileMask;
     
     [Header("During Game")]
+    private Tile prevTile;
     private Tile selectedTile;
     private Piece selectedPiece;
 
@@ -59,12 +60,14 @@ public class PieceMover : MonoBehaviour
                         selectedPiece = selectedTile.GetCurrentPiece();
                         selectedPiece.findMoves();
                     }
-                    // If newly selected tile has NO piece on it
+                    // If newly selected tile is a valid tile AND has NO piece on it
+                    // Move selected piece to that tile
                     else if (selectedPiece.validMoves.Contains(selectedTile) && 
                         selectedTile.GetCurrentPiece() == null)
                     {
                         selectedPiece.moveToSquare(selectedTile);
                         selectedPiece.clearMoves();
+                        prevTile.SetCurrentPiece(null);
                     }
                     // If a tile outside of selected piece's valid moves is clicked,
                     // set the selected piece as null
@@ -75,8 +78,12 @@ public class PieceMover : MonoBehaviour
                 }
                 else // No piece selected yet
                 {
-                    selectedPiece = selectedTile.GetCurrentPiece();
-                    selectedPiece.findMoves();
+                    if (selectedTile.GetCurrentPiece() != null)
+                    {
+                        selectedPiece = selectedTile.GetCurrentPiece();
+                        selectedPiece.findMoves();
+                        prevTile = selectedTile;
+                    }
                 }
             }
         }
