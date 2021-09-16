@@ -63,7 +63,7 @@ public class PieceMover : MonoBehaviour
                     else if (selectedTile.GetCurrentPiece() == null)
                     {
                         Debug.Log("Called function moveToSquare");
-                        selectedPiece.moveToSquare(tileObject);
+                        selectedPiece.moveToSquare(selectedTile);
                         selectedPiece.clearMoves();
                     }
                     else
