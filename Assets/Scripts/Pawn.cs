@@ -24,13 +24,11 @@ public class Pawn : Piece
     //finds all possible moves
     public override void findMoves() 
     {
-        Debug.Log("Current tile's name: " + boardGeneration.gameBoard[this.row, this.col].name);
         //forward movement detection
         //pawns cannot move forward if a piece is blocking it
         Tile forwardTile = boardGeneration.gameBoard[this.row + movementModifier, this.col].GetComponent<Tile>();
         if (forwardTile.GetCurrentPiece() == null ||
             forwardTile.GetCurrentPiece().isWhite != this.isWhite) {
-            Debug.Log("Added forward movement");
             validMoves.Add(forwardTile);
         }
 

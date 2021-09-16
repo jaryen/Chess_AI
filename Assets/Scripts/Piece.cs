@@ -37,25 +37,30 @@ public class Piece : BoardGeneration
     //moves the piece to the selected square, return true if successful, else return false
     public bool moveToSquare(GameObject dest) 
     {
+        Debug.Log("0");
+        Debug.Log("# of Valid Moves: " + validMoves.Count.ToString());
         foreach (GameObject i in validMoves) 
         {
+            Debug.Log("1");
             // If the current valid tile is equal to 
             // the destination tile
             if (i == dest)
             {
+                Debug.Log("2");
                 Tile currValidTile = i.GetComponent<Tile>();
                 Tile destTile = dest.GetComponent<Tile>();
 
                 // check to see if a piece would be taken with this move
                 if (currValidTile.GetCurrentPiece() != null)
                 {
+                    Debug.Log("3");
+
                     Destroy(destTile.GetCurrentPiece());
                 }
                 else // move the piece
                 {
-                    Tile currTile = this.GetComponent<Tile>();
-                    Debug.Log("Curr Tile: " + currTile.name);
-                    destTile.SetCurrentPiece(currTile.GetCurrentPiece());
+                    Debug.Log("4");
+                    destTile.SetCurrentPiece(this);
                 }
                 return true;
             }
