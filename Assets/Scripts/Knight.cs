@@ -67,7 +67,8 @@ public class Knight : Piece
             }
         }
 
-        if (this.col >= 2) { //knight can move left
+        if (this.col >= 2)
+        { //knight can move left
             Tile tile = boardGeneration.gameBoard[this.row + 1, this.col - 2].GetComponent<Tile>();
             //check left top
             if (tile.GetCurrentPiece() == null ||
@@ -83,7 +84,7 @@ public class Knight : Piece
             {
                 validMoves.Add(tile);
             }
-        }       
+        }
     }
 
     public override bool moveToSquare(Tile dest)
