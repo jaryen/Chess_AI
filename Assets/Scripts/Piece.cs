@@ -29,6 +29,13 @@ public abstract class Piece : BoardGeneration
         validMoves.Clear();
     }
 
+    public bool checkOutOfBounds(int r, int c) {
+        if (r < 0 || r > 7 || c < 0 || c > 7) {
+            return false;
+        }
+        return true;
+    }
+
     public abstract void findMoves();
 
     //moves the piece to the selected square, return true if successful, else return false

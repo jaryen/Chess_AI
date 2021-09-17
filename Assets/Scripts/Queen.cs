@@ -5,6 +5,7 @@ using UnityEngine;
 public class Queen : Piece
 {
     private int dRow, dCol, sRow, sCol;
+    private Tile tile;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -18,91 +19,115 @@ public class Queen : Piece
         //check top left
         dRow = this.row + 1;
         dCol = this.col - 1;
-        Tile tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
-        while (dRow <= 7 && (tile.GetCurrentPiece() == null ||
-               tile.GetCurrentPiece().isWhite != this.isWhite))
+        if (checkOutOfBounds(dRow, dCol))
         {
-            validMoves.Add(gameBoard[dRow, dCol]);
-            dRow++;
-            dCol--;
+            tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
+            while (dRow <= 7 && (tile.GetCurrentPiece() == null ||
+                   tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                validMoves.Add(tile);
+                dRow++;
+                dCol--;
+            }
         }
 
         //check top right
         dRow = this.row + 1;
         dCol = this.col + 1;
-        tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
-        while (dRow >= 0 && (tile.GetCurrentPiece() == null ||
-               tile.GetCurrentPiece().isWhite != this.isWhite))
+        if (checkOutOfBounds(dRow, dCol))
         {
-            validMoves.Add(gameBoard[dRow, dCol]);
-            dRow++;
-            dCol++;
+            tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
+            while (dRow >= 0 && (tile.GetCurrentPiece() == null ||
+                   tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                validMoves.Add(tile);
+                dRow++;
+                dCol++;
+            }
         }
 
         //check bottom left
         dRow = this.row - 1;
         dCol = this.col - 1;
-        tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
-        while (dCol <= 7 && (tile.GetCurrentPiece() == null ||
-               tile.GetCurrentPiece().isWhite != this.isWhite))
+        if (checkOutOfBounds(dRow, dCol))
         {
-            validMoves.Add(gameBoard[dRow, dCol]);
-            dRow--;
-            dCol--;
+            tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
+            while (dCol <= 7 && (tile.GetCurrentPiece() == null ||
+                   tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                validMoves.Add(tile);
+                dRow--;
+                dCol--;
+            }
         }
 
         //check bottom right
         dRow = this.row - 1;
         dCol = this.col + 1;
-        tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
-        while (dCol >= 0 && (tile.GetCurrentPiece() == null ||
-               tile.GetCurrentPiece().isWhite != this.isWhite))
+        if (checkOutOfBounds(dRow, dCol))
         {
-            validMoves.Add(gameBoard[dRow, dCol]);
-            dRow--;
-            dCol++;
+            tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
+            while (dCol >= 0 && (tile.GetCurrentPiece() == null ||
+                   tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                validMoves.Add(tile);
+                dRow--;
+                dCol++;
+            }
         }
 
         // Forward movement
         sRow = this.row + 1;
-        tile = boardGeneration.gameBoard[sRow, this.col].GetComponent<Tile>();
-        while (sRow <= 7 && (tile.GetCurrentPiece() == null ||
-            tile.GetCurrentPiece().isWhite != this.isWhite))
+        if (checkOutOfBounds(sRow, this.col))
         {
-            // if hit a piece in front
-            validMoves.Add(tile);
-            sRow++;
+            tile = boardGeneration.gameBoard[sRow, this.col].GetComponent<Tile>();
+            while (sRow <= 7 && (tile.GetCurrentPiece() == null ||
+                tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                // if hit a piece in front
+                validMoves.Add(tile);
+                sRow++;
+            }
         }
 
         // Backwards movement
         sRow = this.row - 1;
-        tile = boardGeneration.gameBoard[sRow, this.col].GetComponent<Tile>();
-        while (sRow >= 0 && (tile.GetCurrentPiece() == null ||
-            tile.GetCurrentPiece().isWhite != this.isWhite))
+        if (checkOutOfBounds(sRow, this.col))
         {
-            // if hit a piece in front
-            validMoves.Add(tile);
-            sRow--;
+            tile = boardGeneration.gameBoard[sRow, this.col].GetComponent<Tile>();
+            while (sRow >= 0 && (tile.GetCurrentPiece() == null ||
+                tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                // if hit a piece in front
+                validMoves.Add(tile);
+                sRow--;
+            }
         }
 
         // Right movement
         sCol = this.col + 1;
-        tile = boardGeneration.gameBoard[this.row, sCol].GetComponent<Tile>();
-        while (sCol <= 7 && (tile.GetCurrentPiece() == null ||
-            tile.GetCurrentPiece().isWhite != this.isWhite))
+        if (checkOutOfBounds(this.row, sCol))
         {
-            validMoves.Add(tile);
-            sCol++;
+            tile = boardGeneration.gameBoard[this.row, sCol].GetComponent<Tile>();
+            while (sCol <= 7 && (tile.GetCurrentPiece() == null ||
+                tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                validMoves.Add(tile);
+                sCol++;
+            }
         }
 
         // Left movement
         sCol = this.col - 1;
-        tile = boardGeneration.gameBoard[this.row, sCol].GetComponent<Tile>();
-        while (sCol >= 0 && (tile.GetCurrentPiece() == null ||
-            tile.GetCurrentPiece().isWhite != this.isWhite))
+        if (checkOutOfBounds(this.row, sCol))
         {
-            validMoves.Add(tile);
-            sCol--;
+            tile = boardGeneration.gameBoard[this.row, sCol].GetComponent<Tile>();
+            while (sCol >= 0 && (tile.GetCurrentPiece() == null ||
+                tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                validMoves.Add(tile);
+                sCol--;
+            }
         }
     }
 
