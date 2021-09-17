@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Knight : Piece
 {
+    private Tile tile;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -14,75 +15,97 @@ public class Knight : Piece
     public override void findMoves()
     {
         if (this.row <= 5) { //knight can move up
-            Tile tile = boardGeneration.gameBoard[this.row + 2, this.col - 1].GetComponent<Tile>();
-            //check top left
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite)
-            {
-                validMoves.Add(tile);
+            if (this.col > 0) {
+                tile = boardGeneration.gameBoard[this.row + 2, this.col - 1].GetComponent<Tile>();
+                //check top left
+                if (tile.GetCurrentPiece() == null ||
+                    tile.GetCurrentPiece().isWhite != this.isWhite)
+                {
+                    validMoves.Add(tile);
+                }
             }
 
-            tile = boardGeneration.gameBoard[this.row + 2, this.col + 1].GetComponent<Tile>();
-            //check top right
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite)
+            if (this.col < 7)
             {
-                validMoves.Add(tile);
+                tile = boardGeneration.gameBoard[this.row + 2, this.col + 1].GetComponent<Tile>();//check top right
+                if (tile.GetCurrentPiece() == null ||
+                    tile.GetCurrentPiece().isWhite != this.isWhite)
+                {
+                    validMoves.Add(tile);
+                }
             }
+            
         }
 
         if (this.row >= 2) { //knight can move down
-            Tile tile = boardGeneration.gameBoard[this.row - 2, this.col - 1].GetComponent<Tile>();
-            //check bottom left
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite)
+            if (this.col > 0)
             {
-                validMoves.Add(tile);
+                tile = boardGeneration.gameBoard[this.row - 2, this.col - 1].GetComponent<Tile>();
+                //check top left
+                if (tile.GetCurrentPiece() == null ||
+                    tile.GetCurrentPiece().isWhite != this.isWhite)
+                {
+                    validMoves.Add(tile);
+                }
             }
 
-            tile = boardGeneration.gameBoard[this.row - 2, this.col + 1].GetComponent<Tile>();
-            //check bottom right
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite)
+            if (this.col < 7)
             {
-                validMoves.Add(tile);
+                tile = boardGeneration.gameBoard[this.row - 2, this.col + 1].GetComponent<Tile>();
+                //check top left
+                if (tile.GetCurrentPiece() == null ||
+                    tile.GetCurrentPiece().isWhite != this.isWhite)
+                {
+                    validMoves.Add(tile);
+                }
             }
         }
 
         if (this.col <= 5) { //knight can move right
-            Tile tile = boardGeneration.gameBoard[this.row + 1, this.col + 2].GetComponent<Tile>();
-            //check right top
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite)
+            if (this.row < 7)
             {
-                validMoves.Add(tile);
+                tile = boardGeneration.gameBoard[this.row + 1, this.col + 2].GetComponent<Tile>();
+                //check right top
+                if (tile.GetCurrentPiece() == null ||
+                    tile.GetCurrentPiece().isWhite != this.isWhite)
+                {
+                    validMoves.Add(tile);
+                }
             }
 
-            tile = boardGeneration.gameBoard[this.row - 1, this.col + 2].GetComponent<Tile>();
-            //check right bottom
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite)
+            if (this.row > 0)
             {
-                validMoves.Add(tile);
+                tile = boardGeneration.gameBoard[this.row - 1, this.col + 2].GetComponent<Tile>();
+                //check right top
+                if (tile.GetCurrentPiece() == null ||
+                    tile.GetCurrentPiece().isWhite != this.isWhite)
+                {
+                    validMoves.Add(tile);
+                }
             }
         }
 
-        if (this.col >= 2)
-        { //knight can move left
-            Tile tile = boardGeneration.gameBoard[this.row + 1, this.col - 2].GetComponent<Tile>();
-            //check left top
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite)
+        if (this.col >= 2) { //knight can move left
+            if (this.row < 7)
             {
-                validMoves.Add(tile);
+                tile = boardGeneration.gameBoard[this.row + 1, this.col - 2].GetComponent<Tile>();
+                //check right top
+                if (tile.GetCurrentPiece() == null ||
+                    tile.GetCurrentPiece().isWhite != this.isWhite)
+                {
+                    validMoves.Add(tile);
+                }
             }
 
-            tile = boardGeneration.gameBoard[this.row - 1, this.col - 2].GetComponent<Tile>();
-            //check left bottom
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite)
+            if (this.row > 0)
             {
-                validMoves.Add(tile);
+                tile = boardGeneration.gameBoard[this.row - 1, this.col - 2].GetComponent<Tile>();
+                //check right top
+                if (tile.GetCurrentPiece() == null ||
+                    tile.GetCurrentPiece().isWhite != this.isWhite)
+                {
+                    validMoves.Add(tile);
+                }
             }
         }
     }

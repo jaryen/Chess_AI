@@ -5,6 +5,7 @@ using UnityEngine;
 public class Rook : Piece
 {
     private int checkRow, checkCol;
+    private Tile tile;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -17,41 +18,56 @@ public class Rook : Piece
     {
         // Forward movement
         checkRow = this.row + 1;
-        Tile tile = boardGeneration.gameBoard[checkRow, this.col].GetComponent<Tile>();
-        while (checkRow <= 7 && (tile.GetCurrentPiece() == null ||
-            tile.GetCurrentPiece().isWhite != this.isWhite)) {
-            // if hit a piece in front
-            validMoves.Add(tile);
-            checkRow++;
+        if (checkOutOfBounds(checkRow, this.col)) {
+            tile = boardGeneration.gameBoard[checkRow, this.col].GetComponent<Tile>();
+            while (checkRow <= 7 && (tile.GetCurrentPiece() == null ||
+                tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                // if hit a piece in front
+                validMoves.Add(tile);
+                checkRow++;
+            }
         }
-
+        
         // Backwards movement
         checkRow = this.row - 1;
-        tile = boardGeneration.gameBoard[checkRow, this.col].GetComponent<Tile>();
-        while (checkRow >= 0 && (tile.GetCurrentPiece() == null ||
-            tile.GetCurrentPiece().isWhite != this.isWhite)) {
-            // if hit a piece in front
-            validMoves.Add(tile);
-            checkRow--;
+        if (checkOutOfBounds(checkRow, this.col))
+        {
+            tile = boardGeneration.gameBoard[checkRow, this.col].GetComponent<Tile>();
+            while (checkRow >= 0 && (tile.GetCurrentPiece() == null ||
+                tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                // if hit a piece in front
+                validMoves.Add(tile);
+                checkRow--;
+            }
         }
-
+        
         // Right movement
         checkCol = this.col + 1;
-        tile = boardGeneration.gameBoard[this.row, checkCol].GetComponent<Tile>();
-        while (checkCol <= 7 && (tile.GetCurrentPiece() == null ||
-            tile.GetCurrentPiece().isWhite != this.isWhite)) {
-            validMoves.Add(tile);
-            checkCol++;
+        if (checkOutOfBounds(this.row, checkCol))
+        {
+            tile = boardGeneration.gameBoard[this.row, checkCol].GetComponent<Tile>();
+            while (checkCol <= 7 && (tile.GetCurrentPiece() == null ||
+                tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                validMoves.Add(tile);
+                checkCol++;
+            }
         }
-
+        
         // Left movement
         checkCol = this.col - 1;
-        tile = boardGeneration.gameBoard[this.row, checkCol].GetComponent<Tile>();
-        while (checkCol >= 0 && (tile.GetCurrentPiece() == null ||
-            tile.GetCurrentPiece().isWhite != this.isWhite)) {
-            validMoves.Add(tile);
-            checkCol--;
-        }
+        if (checkOutOfBounds(this.row, checkCol))
+        {
+            tile = boardGeneration.gameBoard[this.row, checkCol].GetComponent<Tile>();
+            while (checkCol >= 0 && (tile.GetCurrentPiece() == null ||
+                tile.GetCurrentPiece().isWhite != this.isWhite))
+            {
+                validMoves.Add(tile);
+                checkCol--;
+            }
+        }        
     }
 
     public override bool moveToSquare(Tile dest)
