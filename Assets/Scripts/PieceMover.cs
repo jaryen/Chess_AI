@@ -65,14 +65,20 @@ public class PieceMover : MonoBehaviour
                     else if (selectedPiece.validMoves.Contains(selectedTile) && 
                         selectedTile.GetCurrentPiece() == null)
                     {
+                        Debug.Log("Move to selected tile");
                         selectedPiece.moveToSquare(selectedTile);
                         selectedPiece.clearMoves();
+                        selectedPiece.transform.position = selectedTile.transform.position;
+                        
                         prevTile.SetCurrentPiece(null);
+                        selectedPiece = null;
                     }
                     // If a tile outside of selected piece's valid moves is clicked,
                     // set the selected piece as null
                     else if (!selectedPiece.validMoves.Contains(selectedTile))
                     {
+                        Debug.Log("No valid moves; Didn't move piece");
+                        selectedPiece.clearMoves();
                         selectedPiece = null;
                     }
                 }

@@ -28,7 +28,9 @@ public class Pawn : Piece
         //pawns cannot move forward if a piece is blocking it
         Tile forwardTile = boardGeneration.gameBoard[this.row + movementModifier, this.col].GetComponent<Tile>();
         if (forwardTile.GetCurrentPiece() == null || forwardTile.GetCurrentPiece().isWhite != this.isWhite) {
+            Debug.Log("Initial Num Valid Moves: " + validMoves.Count);
             validMoves.Add(forwardTile);
+            Debug.Log("Aftermath Num Valid Moves: " + validMoves.Count);
         }
 
         //intial pawn double move for white
@@ -38,7 +40,7 @@ public class Pawn : Piece
             {
                 validMoves.Add(doubleForwardTile);
             }
-        }   
+        }
 
         //intial pawn double move for black
         if (!isWhite && this.row == 6)

@@ -107,7 +107,7 @@ public class Knight : Piece
                     validMoves.Add(tile);
                 }
             }
-        }       
+        }
     }
 
     public override bool moveToSquare(Tile dest)
