@@ -53,23 +53,17 @@ public class PieceMover : MonoBehaviour
                 {
                     // First check if newly selected tile has a piece and is same 
                     // color. If so, set the current piece to the piece on new tile.
-                    if (selectedTile.GetCurrentPiece() != null && selectedPiece.isWhite
-                        == selectedTile.GetCurrentPiece().isWhite)
+                    if (selectedTile.GetCurrentPiece() != null && selectedPiece.isWhite == selectedTile.GetCurrentPiece().isWhite)
                     {
                         selectedPiece.clearMoves(); // Clear the old selected piece's moves
-                        selectedPiece.displayValidMoves();
                         selectedPiece = selectedTile.GetCurrentPiece();
-                        Debug.Log("PieceMover called findMoves() 1");
                         selectedPiece.findMoves(selectedTile);
-                        selectedPiece.displayValidMoves();
                         prevTile = selectedTile;
                     }
                     // If newly selected tile is a valid tile AND has NO piece on it
                     // Move selected piece to that tile
-                    else if (selectedPiece.validMoves.Contains(selectedTile) && 
-                        selectedTile.GetCurrentPiece() == null)
+                    else if (selectedPiece.validMoves.Contains(selectedTile) && selectedTile.GetCurrentPiece() == null)
                     {
-                        Debug.Log("Move to selected tile");
                         selectedPiece.moveToSquare(selectedTile);
                         selectedPiece.clearMoves();
                         selectedPiece.transform.position = selectedTile.transform.position;
@@ -81,7 +75,6 @@ public class PieceMover : MonoBehaviour
                     // set the selected piece as null
                     else if (!selectedPiece.validMoves.Contains(selectedTile))
                     {
-                        Debug.Log("No valid moves; Didn't move piece");
                         selectedPiece.clearMoves();
                         selectedPiece = null;
                     }
@@ -92,10 +85,7 @@ public class PieceMover : MonoBehaviour
                     {
                         selectedPiece = selectedTile.GetCurrentPiece();
                         selectedPiece.clearMoves(); // Clear the selected piece's moves
-                        selectedPiece.displayValidMoves();                        
-                        Debug.Log("PieceMover called findMoves() 2");
                         selectedPiece.findMoves(selectedTile);
-                        selectedPiece.displayValidMoves();
                         prevTile = selectedTile;
                     }
                 }
