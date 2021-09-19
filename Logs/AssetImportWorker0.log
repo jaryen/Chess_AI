@@ -826,3 +826,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1514.603039 seconds.
+  path: Assets/Scripts/Queen.cs
+  artifactKey: Guid(8fa37fcd99fb592428b59217f3981b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Queen.cs using Guid(8fa37fcd99fb592428b59217f3981b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b10d2a414438637b995884218e466e1e') in 0.015093 seconds 
+  Import took 0.042549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.548050 seconds.
+  path: Assets/Scripts/Rook.cs
+  artifactKey: Guid(5a5c0508f9840554aa5886ef8b659b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rook.cs using Guid(5a5c0508f9840554aa5886ef8b659b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b785a9b2a565cdf0ac6eb42750fb142') in 0.007898 seconds 
+  Import took 0.041397 seconds .
+
