@@ -14,11 +14,11 @@ public class Queen : Piece
     }
 
     //finds all possible moves
-    public override void findMoves()
+    public override void findMoves(Tile src)
     {
         //check top left
-        dRow = this.row + 1;
-        dCol = this.col - 1;
+        dRow = src.row + 1;
+        dCol = src.col - 1;
         if (checkOutOfBounds(dRow, dCol))
         {
             tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
@@ -32,8 +32,8 @@ public class Queen : Piece
         }
 
         //check top right
-        dRow = this.row + 1;
-        dCol = this.col + 1;
+        dRow = src.row + 1;
+        dCol = src.col + 1;
         if (checkOutOfBounds(dRow, dCol))
         {
             tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
@@ -47,8 +47,8 @@ public class Queen : Piece
         }
 
         //check bottom left
-        dRow = this.row - 1;
-        dCol = this.col - 1;
+        dRow = src.row - 1;
+        dCol = src.col - 1;
         if (checkOutOfBounds(dRow, dCol))
         {
             tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
@@ -62,8 +62,8 @@ public class Queen : Piece
         }
 
         //check bottom right
-        dRow = this.row - 1;
-        dCol = this.col + 1;
+        dRow = src.row - 1;
+        dCol = src.col + 1;
         if (checkOutOfBounds(dRow, dCol))
         {
             tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
@@ -77,10 +77,10 @@ public class Queen : Piece
         }
 
         // Forward movement
-        sRow = this.row + 1;
-        if (checkOutOfBounds(sRow, this.col))
+        sRow = src.row + 1;
+        if (checkOutOfBounds(sRow, src.col))
         {
-            tile = boardGeneration.gameBoard[sRow, this.col].GetComponent<Tile>();
+            tile = boardGeneration.gameBoard[sRow, src.col].GetComponent<Tile>();
             while (sRow <= 7 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
@@ -91,10 +91,10 @@ public class Queen : Piece
         }
 
         // Backwards movement
-        sRow = this.row - 1;
-        if (checkOutOfBounds(sRow, this.col))
+        sRow = src.row - 1;
+        if (checkOutOfBounds(sRow, src.col))
         {
-            tile = boardGeneration.gameBoard[sRow, this.col].GetComponent<Tile>();
+            tile = boardGeneration.gameBoard[sRow, src.col].GetComponent<Tile>();
             while (sRow >= 0 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
@@ -105,10 +105,10 @@ public class Queen : Piece
         }
 
         // Right movement
-        sCol = this.col + 1;
-        if (checkOutOfBounds(this.row, sCol))
+        sCol = src.col + 1;
+        if (checkOutOfBounds(src.row, sCol))
         {
-            tile = boardGeneration.gameBoard[this.row, sCol].GetComponent<Tile>();
+            tile = boardGeneration.gameBoard[src.row, sCol].GetComponent<Tile>();
             while (sCol <= 7 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
@@ -118,10 +118,10 @@ public class Queen : Piece
         }
 
         // Left movement
-        sCol = this.col - 1;
-        if (checkOutOfBounds(this.row, sCol))
+        sCol = src.col - 1;
+        if (checkOutOfBounds(src.row, sCol))
         {
-            tile = boardGeneration.gameBoard[this.row, sCol].GetComponent<Tile>();
+            tile = boardGeneration.gameBoard[src.row, sCol].GetComponent<Tile>();
             while (sCol >= 0 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {

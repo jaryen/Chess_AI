@@ -12,11 +12,11 @@ public class Knight : Piece
     }
 
     //finds all possible moves
-    public override void findMoves()
+    public override void findMoves(Tile src)
     {
-        if (this.row <= 5) { //knight can move up
-            if (this.col > 0) {
-                tile = boardGeneration.gameBoard[this.row + 2, this.col - 1].GetComponent<Tile>();
+        if (src.row <= 5) { //knight can move up
+            if (src.col > 0) {
+                tile = boardGeneration.gameBoard[src.row + 2, src.col - 1].GetComponent<Tile>();
                 //check top left
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -25,9 +25,9 @@ public class Knight : Piece
                 }
             }
 
-            if (this.col < 7)
+            if (src.col < 7)
             {
-                tile = boardGeneration.gameBoard[this.row + 2, this.col + 1].GetComponent<Tile>();//check top right
+                tile = boardGeneration.gameBoard[src.row + 2, src.col + 1].GetComponent<Tile>();//check top right
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
                 {
@@ -37,10 +37,10 @@ public class Knight : Piece
             
         }
 
-        if (this.row >= 2) { //knight can move down
-            if (this.col > 0)
+        if (src.row >= 2) { //knight can move down
+            if (src.col > 0)
             {
-                tile = boardGeneration.gameBoard[this.row - 2, this.col - 1].GetComponent<Tile>();
+                tile = boardGeneration.gameBoard[src.row - 2, src.col - 1].GetComponent<Tile>();
                 //check top left
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -49,9 +49,9 @@ public class Knight : Piece
                 }
             }
 
-            if (this.col < 7)
+            if (src.col < 7)
             {
-                tile = boardGeneration.gameBoard[this.row - 2, this.col + 1].GetComponent<Tile>();
+                tile = boardGeneration.gameBoard[src.row - 2, src.col + 1].GetComponent<Tile>();
                 //check top left
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -61,10 +61,10 @@ public class Knight : Piece
             }
         }
 
-        if (this.col <= 5) { //knight can move right
-            if (this.row < 7)
+        if (src.col <= 5) { //knight can move right
+            if (src.row < 7)
             {
-                tile = boardGeneration.gameBoard[this.row + 1, this.col + 2].GetComponent<Tile>();
+                tile = boardGeneration.gameBoard[src.row + 1, src.col + 2].GetComponent<Tile>();
                 //check right top
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -73,9 +73,9 @@ public class Knight : Piece
                 }
             }
 
-            if (this.row > 0)
+            if (src.row > 0)
             {
-                tile = boardGeneration.gameBoard[this.row - 1, this.col + 2].GetComponent<Tile>();
+                tile = boardGeneration.gameBoard[src.row - 1, src.col + 2].GetComponent<Tile>();
                 //check right top
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -85,10 +85,10 @@ public class Knight : Piece
             }
         }
 
-        if (this.col >= 2) { //knight can move left
-            if (this.row < 7)
+        if (src.col >= 2) { //knight can move left
+            if (src.row < 7)
             {
-                tile = boardGeneration.gameBoard[this.row + 1, this.col - 2].GetComponent<Tile>();
+                tile = boardGeneration.gameBoard[src.row + 1, src.col - 2].GetComponent<Tile>();
                 //check right top
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -97,9 +97,9 @@ public class Knight : Piece
                 }
             }
 
-            if (this.row > 0)
+            if (src.row > 0)
             {
-                tile = boardGeneration.gameBoard[this.row - 1, this.col - 2].GetComponent<Tile>();
+                tile = boardGeneration.gameBoard[src.row - 1, src.col - 2].GetComponent<Tile>();
                 //check right top
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)

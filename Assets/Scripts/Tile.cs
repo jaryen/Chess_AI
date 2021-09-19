@@ -7,6 +7,8 @@ public class Tile : MonoBehaviour
     [Header("Setup")]
     public SpriteRenderer tile;
 
+    [SerializeField] public int row;
+    [SerializeField] public int col;
     private Color tileCol;
     private Piece currentPiece;
 
