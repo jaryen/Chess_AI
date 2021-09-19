@@ -22,12 +22,20 @@ public class Queen : Piece
         if (checkOutOfBounds(dRow, dCol))
         {
             tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
-            while (dRow <= 7 && (tile.GetCurrentPiece() == null ||
+            while (dRow <= 7 && dCol >= 0 && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 dRow++;
                 dCol--;
+                if (checkOutOfBounds(dRow, dCol))
+                {
+                    tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
+                }
             }
         }
 
@@ -37,12 +45,20 @@ public class Queen : Piece
         if (checkOutOfBounds(dRow, dCol))
         {
             tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
-            while (dRow >= 0 && (tile.GetCurrentPiece() == null ||
+            while (dRow <= 7 && dCol <= 7 && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 dRow++;
                 dCol++;
+                if (checkOutOfBounds(dRow, dCol))
+                {
+                    tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
+                }
             }
         }
 
@@ -52,12 +68,20 @@ public class Queen : Piece
         if (checkOutOfBounds(dRow, dCol))
         {
             tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
-            while (dCol <= 7 && (tile.GetCurrentPiece() == null ||
+            while (dRow >= 0 && dCol >= 0 && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 dRow--;
                 dCol--;
+                if (checkOutOfBounds(dRow, dCol))
+                {
+                    tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
+                }
             }
         }
 
@@ -67,12 +91,20 @@ public class Queen : Piece
         if (checkOutOfBounds(dRow, dCol))
         {
             tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
-            while (dCol >= 0 && (tile.GetCurrentPiece() == null ||
+            while (dRow >= 0 && dCol <= 7 && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 dRow--;
                 dCol++;
+                if (checkOutOfBounds(dRow, dCol))
+                {
+                    tile = boardGeneration.gameBoard[dRow, dCol].GetComponent<Tile>();
+                }
             }
         }
 
@@ -84,9 +116,18 @@ public class Queen : Piece
             while (sRow <= 7 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
+                tile = boardGeneration.gameBoard[sRow, src.col].GetComponent<Tile>();
                 // if hit a piece in front
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 sRow++;
+                if (sRow <= 7)
+                {
+                    tile = boardGeneration.gameBoard[sRow, src.col].GetComponent<Tile>();
+                }
             }
         }
 
@@ -98,9 +139,18 @@ public class Queen : Piece
             while (sRow >= 0 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
+                tile = boardGeneration.gameBoard[sRow, src.col].GetComponent<Tile>();
                 // if hit a piece in front
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 sRow--;
+                if (sRow >= 0)
+                {
+                    tile = boardGeneration.gameBoard[sRow, src.col].GetComponent<Tile>();
+                }
             }
         }
 
@@ -113,7 +163,15 @@ public class Queen : Piece
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 sCol++;
+                if (sCol <= 7)
+                {
+                    tile = boardGeneration.gameBoard[src.row, sCol].GetComponent<Tile>();
+                }
             }
         }
 
@@ -126,7 +184,15 @@ public class Queen : Piece
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 sCol--;
+                if (sCol >= 0)
+                {
+                    tile = boardGeneration.gameBoard[src.row, sCol].GetComponent<Tile>();
+                }
             }
         }
     }
