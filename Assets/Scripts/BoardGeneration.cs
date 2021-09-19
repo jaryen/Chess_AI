@@ -42,10 +42,12 @@ public class BoardGeneration : MonoBehaviour
 
                 // Set tile colors
                 Tile tileScript = tile.GetComponent<Tile>();
-                if ((r + c) % 2 == 0){  //set color of each tile
+                if ((r + c) % 2 == 0) //set color of each tile
+                {
                     tileScript.SetColor(darkSquareCol);
                 }
-                else { // Odd tile
+                else // Odd tile 
+                {
                     tileScript.SetColor(lightSquareCol);
                 }
 

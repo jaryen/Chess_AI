@@ -21,56 +21,63 @@ public class Bishop : Piece
         checkCol = this.col - 1;
         if (checkOutOfBounds(checkRow, checkCol)) {
             tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
-            while (checkRow <= 7 && (tile.GetCurrentPiece() == null ||
+            while (checkRow >= 7 && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
                 checkRow++;
                 checkCol--;
+                tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
             }
         }
 
         //check top right
         checkRow = this.row + 1;
         checkCol = this.col + 1;
-        if (checkOutOfBounds(checkRow, checkCol)) {
+        if (checkOutOfBounds(checkRow, checkCol))
+        {
             tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
-            while (checkRow >= 0 && (tile.GetCurrentPiece() == null ||
+            while (checkOutOfBounds(checkRow, checkCol) && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
-                validMoves.Add(tile);
+                validMoves.Add(tile); // Out of memory exception
                 checkRow++;
                 checkCol++;
+                tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
             }
-        }        
+        }
 
         //check bottom left
         checkRow = this.row - 1;
         checkCol = this.col - 1;
-        if (checkOutOfBounds(checkRow, checkCol)) {
+        if (checkOutOfBounds(checkRow, checkCol))
+        {
             tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
-            while (checkCol <= 7 && (tile.GetCurrentPiece() == null ||
+            while (checkOutOfBounds(checkRow, checkCol) && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
                 checkRow--;
                 checkCol--;
+                tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
             }
-        }        
+        }
 
         //check bottom right
         checkRow = this.row - 1;
         checkCol = this.col + 1;
-        if (checkOutOfBounds(checkRow, checkCol)) {
+        if (checkOutOfBounds(checkRow, checkCol))
+        {
             tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
-            while (checkCol >= 0 && (tile.GetCurrentPiece() == null ||
+            while (checkOutOfBounds(checkRow, checkCol) && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
                 checkRow--;
                 checkCol++;
+                tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
             }
-        }    
+        }
     }
 
     public override bool moveToSquare(Tile dest)
