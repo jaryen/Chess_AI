@@ -17,11 +17,6 @@ public abstract class Piece : BoardGeneration
         boardGeneration = boardGeneratorGO.GetComponent<BoardGeneration>();
     }
 
-    //adds a valid move into the validMoves list
-    public void addMove(GameObject square) {
-        validMoves.Add(square);
-    }
-
     //clears validMoves list
     public void clearMoves() {
         validMoves.Clear();
