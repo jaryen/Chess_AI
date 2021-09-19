@@ -4,11 +4,9 @@ using UnityEngine;
 
 public abstract class Piece : BoardGeneration
 {
-    public ArrayList validMoves = new ArrayList();   //stores all possible moves for this piece
+    [SerializeField] public ArrayList validMoves = new ArrayList();   //stores all possible moves for this piece
     public bool taken = false;
     [SerializeField] public bool isWhite;
-    [SerializeField] public int row;
-    [SerializeField] public int col;
 
     protected BoardGeneration boardGeneration;
 
@@ -36,7 +34,14 @@ public abstract class Piece : BoardGeneration
         return true;
     }
 
-    public abstract void findMoves();
+    public void displayValidMoves() {
+        Debug.Log("Valid moves: ");
+        foreach (Tile tile in validMoves) {
+            Debug.Log(tile.tile.GetInstanceID());
+        }
+    }
+
+    public abstract void findMoves(Tile tile);
 
     //moves the piece to the selected square, return true if successful, else return false
     public abstract bool moveToSquare(Tile dest);

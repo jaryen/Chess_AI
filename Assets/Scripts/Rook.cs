@@ -14,58 +14,89 @@ public class Rook : Piece
     }
 
     //finds all possible moves
-    public override void findMoves()
+    public override void findMoves(Tile src)
     {
         // Forward movement
-        checkRow = this.row + 1;
-        if (checkOutOfBounds(checkRow, this.col)) {
-            tile = boardGeneration.gameBoard[checkRow, this.col].GetComponent<Tile>();
+        checkRow = src.row + 1;
+        if (checkOutOfBounds(checkRow, src.col)) {
+            tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
             while (checkRow <= 7 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
+                tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
                 // if hit a piece in front
                 validMoves.Add(tile);
+                if(tile.GetCurrentPiece() != null){
+                    break;
+                }
                 checkRow++;
+                if (checkRow <= 7)
+                {
+                    tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
+                }
             }
         }
         
         // Backwards movement
-        checkRow = this.row - 1;
-        if (checkOutOfBounds(checkRow, this.col))
+        checkRow = src.row - 1;
+        if (checkOutOfBounds(checkRow, src.col))
         {
-            tile = boardGeneration.gameBoard[checkRow, this.col].GetComponent<Tile>();
+            tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
             while (checkRow >= 0 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
+                tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
                 // if hit a piece in front
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 checkRow--;
+                if (checkRow >= 0)
+                {
+                    tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
+                }
             }
         }
         
         // Right movement
-        checkCol = this.col + 1;
-        if (checkOutOfBounds(this.row, checkCol))
+        checkCol = src.col + 1;
+        if (checkOutOfBounds(src.row, checkCol))
         {
-            tile = boardGeneration.gameBoard[this.row, checkCol].GetComponent<Tile>();
+            tile = boardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
             while (checkCol <= 7 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
+                if (tile.GetCurrentPiece() != null)
+                {
+                    break;
+                }
                 checkCol++;
+                if (checkCol <= 7) {
+                    tile = boardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
+                }
             }
         }
         
         // Left movement
-        checkCol = this.col - 1;
-        if (checkOutOfBounds(this.row, checkCol))
+        checkCol = src.col - 1;
+        if (checkOutOfBounds(src.row, checkCol))
         {
-            tile = boardGeneration.gameBoard[this.row, checkCol].GetComponent<Tile>();
+            tile = boardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
             while (checkCol >= 0 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
                 validMoves.Add(tile);
+                if(tile.GetCurrentPiece() != null){
+                    break;
+                }
                 checkCol--;
+                if (checkCol >= 0)
+                {
+                    tile = boardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
+                }
             }
         }        
     }

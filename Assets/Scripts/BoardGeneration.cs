@@ -50,6 +50,8 @@ public class BoardGeneration : MonoBehaviour
                 }
 
                 gameBoard[r, c] = tile;
+                tileScript.row = r;
+                tileScript.col = c;
             }
         }
     }
@@ -102,8 +104,6 @@ public class BoardGeneration : MonoBehaviour
             piece.transform.position = gameBoard[r, c].transform.position;
             Piece p = piece.GetComponent<Piece>();
             p.isWhite = isWhite;
-            p.row = r;
-            p.col = c;
 
             // Set current tile's current piece as piece
             Tile t = gameBoard[r, c].GetComponent<Tile>();
