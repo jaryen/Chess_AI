@@ -17,58 +17,67 @@ public class King : Piece
     //finds all possible moves
     public override void findMoves(Tile src)
     {
-        if (src.row != 7) {  //if the king is not in the top src.row
-            Tile tile = boardGeneration.gameBoard[src.row + 1, src.col - 1].GetComponent<Tile>();
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly above and to the left of the king, or for opposing pieces
+        top = (src.row == 7) ? false : true;
+
+        bottom = (src.row == 0) ? false : true;
+
+        left = (src.col == 0) ? false : true;
+
+        right = (src.col == 7) ? false : true;
+
+        if (top) {  //king can move up
+            Tile tile = boardGeneration.gameBoard[src.row + 1, src.col].GetComponent<Tile>();
+            if (tile.GetCurrentPiece() == null || tile.GetCurrentPiece().isWhite != this.isWhite){ //check for pieces directly above the king
                 validMoves.Add(tile);
             }
 
-            tile = boardGeneration.gameBoard[src.row + 1, src.col].GetComponent<Tile>();
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly above the king, or for opposing pieces
-                validMoves.Add(tile);
+            if (left) {  //check top left
+                tile = boardGeneration.gameBoard[src.row + 1, src.col - 1].GetComponent<Tile>();
+                if (tile.GetCurrentPiece() == null || tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly above and to the left of the king
+                    validMoves.Add(tile);
+                }
             }
 
-            tile = boardGeneration.gameBoard[src.row + 1, src.col + 1].GetComponent<Tile>();
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly above and to the right of the king, or for opposing pieces
-                validMoves.Add(tile);
-            }
-        }
-
-        if (src.row != 0) { //if the king is not in the bottom src.row
-            Tile tile = boardGeneration.gameBoard[src.row - 1, src.col - 1].GetComponent<Tile>();
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly above and to the left of the king, or for opposing pieces
-                validMoves.Add(tile);
-            }
-
-            tile = boardGeneration.gameBoard[src.row - 1, src.col].GetComponent<Tile>();
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly above the king, or for opposing pieces
-                validMoves.Add(tile);
-            }
-
-            tile = boardGeneration.gameBoard[src.row - 1, src.col + 1].GetComponent<Tile>();
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly above and to the right of the king, or for opposing pieces
-                validMoves.Add(tile);
+            if (right) {  //check top right
+                tile = boardGeneration.gameBoard[src.row + 1, src.col + 1].GetComponent<Tile>();
+                if (tile.GetCurrentPiece() == null || tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly above and to the right of the king
+                    validMoves.Add(tile);
+                }
             }
         }
+        
 
-        if (src.col != 0) { //if the king isnt on the leftmost src.column
+        if (bottom) { //king can move down
+            Tile tile = boardGeneration.gameBoard[src.row - 1, src.col].GetComponent<Tile>();
+            if (tile.GetCurrentPiece() == null || tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly below the king
+                validMoves.Add(tile);
+            }
+
+            if (left) { //check bottom left
+                tile = boardGeneration.gameBoard[src.row - 1, src.col - 1].GetComponent<Tile>();
+                if (tile.GetCurrentPiece() == null || tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly below and to the left of the king
+                    validMoves.Add(tile);
+                }
+            }
+
+            if (right) {
+                tile = boardGeneration.gameBoard[src.row - 1, src.col + 1].GetComponent<Tile>();
+                if (tile.GetCurrentPiece() == null || tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly below and to the right of the king
+                    validMoves.Add(tile);
+                }
+            }            
+        }
+
+        if (left) { //king can move left
             Tile tile = boardGeneration.gameBoard[src.row, src.col - 1].GetComponent<Tile>();
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly to the left of the king, or for opposing pieces
+            if (tile.GetCurrentPiece() == null || tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly to the left of the king
                 validMoves.Add(tile);
             }
         }
 
-        if (src.col != 7) { //if the king isnt on the rightmost src.column
+        if (right) { //king can move right
             Tile tile = boardGeneration.gameBoard[src.row, src.col + 1].GetComponent<Tile>();
-            if (tile.GetCurrentPiece() == null ||
-                tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly to the right of the king, or for opposing pieces
+            if (tile.GetCurrentPiece() == null || tile.GetCurrentPiece().isWhite != this.isWhite) { //check for pieces directly to the right of the king
                 validMoves.Add(tile);
             }
         }
