@@ -62,6 +62,7 @@ public class PieceMover : MonoBehaviour
                         Debug.Log("PieceMover called findMoves() 1");
                         selectedPiece.findMoves(selectedTile);
                         selectedPiece.displayValidMoves();
+                        prevTile = selectedTile;
                     }
                     // If newly selected tile is a valid tile AND has NO piece on it
                     // Move selected piece to that tile

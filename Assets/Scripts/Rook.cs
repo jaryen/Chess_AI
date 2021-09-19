@@ -113,6 +113,7 @@ public class Rook : Piece
                 if (src.GetCurrentPiece() != null)
                 {
                     Destroy(dest.GetCurrentPiece());
+                    dest.SetCurrentPiece(this);
                 }
                 else // move the piece
                 {
