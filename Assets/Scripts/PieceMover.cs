@@ -66,14 +66,17 @@ public class PieceMover : MonoBehaviour
                     }
                     // If newly selected tile is a valid tile AND has NO piece on it
                     // Move selected piece to that tile
-                    else if (selectedPiece.validMoves.Contains(selectedTile) && 
-                        selectedTile.GetCurrentPiece() == null)
+                    else if (selectedPiece.validMoves.Contains(selectedTile))
                     {
                         Debug.Log("Move to selected tile");
+                        if (selectedTile.GetCurrentPiece() != null)
+                        {
+                            Destroy(selectedTile.GetCurrentPiece().gameObject);
+                        }
                         selectedPiece.moveToSquare(selectedTile);
                         selectedPiece.clearMoves();
                         selectedPiece.transform.position = selectedTile.transform.position;
-                        
+
                         prevTile.SetCurrentPiece(null);
                         selectedPiece = null;
                     }
