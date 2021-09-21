@@ -104,21 +104,6 @@ public class Bishop : Piece
         }    
     }
 
-    public override bool moveToSquare(Tile dest)
-    {
-        foreach (Tile src in validMoves)
-        {
-            // If the current valid tile is equal to 
-            // the destination tile
-            if (src == dest)
-            {
-                dest.SetCurrentPiece(this);
-                return true;
-            }
-        }
-        return false;
-    }
-
     // Update is called once per frame
     void Update()
     {

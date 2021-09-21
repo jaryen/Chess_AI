@@ -83,21 +83,6 @@ public class King : Piece
         }
     }
 
-    public override bool moveToSquare(Tile dest)
-    {
-        foreach (Tile src in validMoves)
-        {
-            // If the current valid tile is equal to 
-            // the destination tile
-            if (src == dest)
-            {
-                dest.SetCurrentPiece(this);
-                return true;
-            }
-        }
-        return false;
-    }
-
     //set check state, true = in check
     public void setCheck(bool state) {
         inCheck = state;
