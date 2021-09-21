@@ -112,15 +112,7 @@ public class Bishop : Piece
             // the destination tile
             if (src == dest)
             {
-                // check to see if a piece would be taken with this move
-                if (src.GetCurrentPiece() != null)
-                {
-                    Destroy(dest.GetCurrentPiece());
-                }
-                else // move the piece
-                {
-                    dest.SetCurrentPiece(this);
-                }
+                dest.SetCurrentPiece(this);
                 return true;
             }
         }
