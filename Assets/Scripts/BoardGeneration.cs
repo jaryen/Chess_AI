@@ -46,7 +46,7 @@ public class BoardGeneration : MonoBehaviour
                 {
                     tileScript.SetColor(darkSquareCol);
                 }
-                else // Odd tile 
+                else // Odd tile
                 {
                     tileScript.SetColor(lightSquareCol);
                 }

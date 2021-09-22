@@ -4,7 +4,7 @@ using UnityEngine;
 
 // Manages piece selection/movement through Tile and
 // moves the piece to second Tile selected
-public class PieceMover : MonoBehaviour
+public class PieceMover : GameManager
 {
     [Header("Setup")]
     public Camera cam;
@@ -73,6 +73,7 @@ public class PieceMover : MonoBehaviour
                         selectedPiece.transform.position = selectedTile.transform.position;
                         prevTile.SetCurrentPiece(null);
                         selectedPiece = null;
+                        swapTurns();
                     }
                     // If a tile outside of selected piece's valid moves is clicked,
                     // set the selected piece as null

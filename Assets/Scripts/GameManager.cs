@@ -11,12 +11,16 @@ public class GameManager : BoardGeneration
 
     private turn currentTurn;
 
-    private ArrayList wPieces;
-    private ArrayList bPieces;
+    private ArrayList wPieces = new ArrayList();
+    private ArrayList bPieces = new ArrayList();
+    private BoardGeneration boardGeneration;
 
     // Start is called before the first frame update
     void Start()
     {
+        GameObject boardGeneratorGO = GameObject.Find("BoardGenerator");
+        boardGeneration = boardGeneratorGO.GetComponent<BoardGeneration>();
+
         currentTurn = turn.white;
         findAllPieces();
     }
@@ -25,13 +29,15 @@ public class GameManager : BoardGeneration
     private void findAllPieces() {
         for (int r = 0; r <= 1; r++) { //scan white pieces
             for (int c = 0; c < 8; c++) {
-                wPieces.Add(gameBoard[r, c].GetComponent<Piece>());
+                Tile tileScript = boardGeneration.gameBoard[r, c].GetComponent<Tile>();
+                wPieces.Add(tileScript.GetCurrentPiece());
             }
         }
 
         for (int r = 6; r <= 7; r++) { //scan black pieces
             for (int c = 0; c < 8; c++) {
-                bPieces.Add(gameBoard[r, c].GetComponent<Piece>());
+                Tile tileScript = boardGeneration.gameBoard[r, c].GetComponent<Tile>();
+                bPieces.Add(tileScript.GetCurrentPiece());
             }
         }
     }
