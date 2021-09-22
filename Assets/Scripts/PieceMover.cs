@@ -66,6 +66,7 @@ public class PieceMover : GameManager
                     {
                         if (selectedTile.GetCurrentPiece() != null)
                         {
+                            takePiece(selectedTile.GetCurrentPiece());
                             Destroy(selectedTile.GetCurrentPiece().gameObject);
                         }
                         selectedPiece.moveToSquare(selectedTile);
@@ -85,7 +86,8 @@ public class PieceMover : GameManager
                 }
                 else // No piece selected yet
                 {
-                    if (selectedTile.GetCurrentPiece() != null)
+                    if (selectedTile.GetCurrentPiece() != null && 
+                        (selectedTile.GetCurrentPiece().isWhite && currentTurn == turn.white || !selectedTile.GetCurrentPiece().isWhite && currentTurn == turn.black))
                     {
                         selectedPiece = selectedTile.GetCurrentPiece();
                         selectedPiece.clearMoves(); // Clear the selected piece's moves
