@@ -9,7 +9,12 @@ public class PieceMover : GameManager
     [Header("Setup")]
     public Camera cam;
     public LayerMask tileMask;
-    
+
+    private Color lightSquareCol = new Color(0.933f, 0.933f, 0.824f);
+    private Color darkSquareCol = new Color(0.463f, 0.588f, 0.337f);
+    private Color selLightSquare = new Color(0.965f, 0.965f, 0.412f);
+    private Color selDarkSquare = new Color(0.729f, 0.792f, 0.169f);
+
     [Header("During Game")]
     private Tile prevTile;
     private Tile selectedTile;
@@ -80,6 +85,7 @@ public class PieceMover : GameManager
                     // set the selected piece as null
                     else
                     {
+                        SpriteRenderer selectedTileSR = selectedTile.GetComponent<SpriteRenderer>();
                         selectedPiece.clearMoves();
                         selectedPiece = null;
                     }
@@ -90,8 +96,21 @@ public class PieceMover : GameManager
                         (selectedTile.GetCurrentPiece().isWhite && currentTurn == turn.white || !selectedTile.GetCurrentPiece().isWhite && currentTurn == turn.black))
                     {
                         selectedPiece = selectedTile.GetCurrentPiece();
-                        selectedPiece.clearMoves(); // Clear the selected piece's moves
+                        selectedPiece.clearMoves();
                         selectedPiece.findMoves(selectedTile);
+
+                        // Highlight selected tile
+                        SpriteRenderer selectedTileSR = selectedTile.GetComponent<SpriteRenderer>();
+                        if (selectedTile.GetColor() == lightSquareCol)
+                        {
+                            Debug.Log("Light Square Selected");
+                            selectedTileSR.color = selLightSquare;
+                        }
+                        else
+                        {
+                            Debug.Log("Dark Square Selected");
+                            selectedTileSR.color = selDarkSquare;
+                        }
                         prevTile = selectedTile;
                     }
                 }
