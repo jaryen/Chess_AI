@@ -267,6 +267,55 @@ MonoBehaviour:
   - {fileID: 1914485982010424135, guid: 6b7c2a1306944dd42a1b5a36b59a54ce, type: 3}
   - {fileID: 5423595969024137158, guid: a66a451c48befd2439eb2b54bff99ba4, type: 3}
   newTile: {fileID: 1186185800346938873, guid: e5e58978cae19d941a6d96e7bffb1ad0, type: 3}
+--- !u!1 &1830766633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1830766635}
+  - component: {fileID: 1830766634}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1830766634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830766633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16773bf2b5682e248b8a67c73f2d012d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardWidth: 8
+  boardHeight: 8
+  whitePieces: []
+  blackPieces: []
+  newTile: {fileID: 0}
+  currentTurn: 0
+--- !u!4 &1830766635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830766633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.031579174, y: 0.2642733, z: -1.569309}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1831703706
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +359,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b47bbf19757704ea53479825e81202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boardWidth: 8
+  boardHeight: 8
+  whitePieces: []
+  blackPieces: []
+  newTile: {fileID: 0}
+  currentTurn: 0
   cam: {fileID: 519420031}
   tileMask:
     serializedVersion: 2

@@ -16,9 +16,11 @@ public class Rook : Piece
     //finds all possible moves
     public override void findMoves(Tile src)
     {
+        Debug.Log(src.row + " " + src.col);
         // Forward movement
         checkRow = src.row + 1;
-        if (checkOutOfBounds(checkRow, src.col)) {
+        if (checkOutOfBounds(checkRow, src.col))
+        {
             tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
             while (checkRow <= 7 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))

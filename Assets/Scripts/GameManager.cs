@@ -14,29 +14,29 @@ public class GameManager : BoardGeneration
     private ArrayList wPieces = new ArrayList();
     private ArrayList bPieces = new ArrayList();
 
-
-    private BoardGeneration boardGeneration;
+    private BoardGeneration bGen;
 
     // Start is called before the first frame update
     void Start()
     {
-        GameObject boardGeneratorGO = GameObject.Find("BoardGenerator");
-        boardGeneration = boardGeneratorGO.GetComponent<BoardGeneration>();
+        GameObject boardGeneratorObj = GameObject.Find("BoardGenerator");
+        bGen = boardGeneratorObj.GetComponent<BoardGeneration>();
         currentTurn = turn.white;
         findAllPieces();
+        //udpateMoves();
     }
 
     //scan all 64 squares at the beginning of the game to fill whitePieces and blackPieces
     private void findAllPieces() {
         for (int r = 0; r <= 1; r++) { //scan white pieces
             for (int c = 0; c < 8; c++) {
-                wPieces.Add(boardGeneration.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece());
+                wPieces.Add(bGen.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece());
             }
         }
 
         for (int r = 6; r <= 7; r++) { //scan black pieces
             for (int c = 0; c < 8; c++) {
-                bPieces.Add(boardGeneration.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece());
+                bPieces.Add(bGen.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece());
             }
         }
     }
@@ -52,6 +52,17 @@ public class GameManager : BoardGeneration
         }
     }
 
+    //updates all valid moves for all pieces on the board
+    public void udpateMoves() {
+        for (int r = 0; r < 8; r++) { //scan board
+            for (int c = 0; c < 8; c++) {
+                if (bGen.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece() != null) {   //there is a piece on this tile
+                    bGen.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece().findMoves(bGen.gameBoard[r, c].GetComponent<Tile>());
+                }
+            }
+        }
+    }
+
     //change current turn from black to white, or from white to black
     public void swapTurns() {
         if (currentTurn == turn.white)
@@ -64,6 +75,7 @@ public class GameManager : BoardGeneration
             currentTurn = turn.white;
             //update white moves
         }
+        //udpateMoves();
     }
 
     // Update is called once per frame
