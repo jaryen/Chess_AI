@@ -10,8 +10,8 @@ public class BoardGeneration : MonoBehaviour
     public GameObject[] whitePieces;
     public GameObject[] blackPieces;
 
-    private Color lightSquareCol = new Color(0.933f, 0.933f, 0.824f, 1);
-    private Color darkSquareCol = new Color(0.463f, 0.588f, 0.337f, 1);
+    public Color lightSquareCol = new Color(0.933f, 0.933f, 0.824f, 1);
+    public Color darkSquareCol = new Color(0.463f, 0.588f, 0.337f, 1);
 
     public GameObject[,] gameBoard;    //2d array to store all tiles
     public GameObject newTile;
@@ -45,10 +45,12 @@ public class BoardGeneration : MonoBehaviour
                 if ((r + c) % 2 == 0) //set color of each tile
                 {
                     tileScript.SetColor(darkSquareCol);
+                    tileScript.isLight = false;
                 }
-                else // Odd tile 
+                else // Odd tile
                 {
                     tileScript.SetColor(lightSquareCol);
+                    tileScript.isLight = true;
                 }
 
                 gameBoard[r, c] = tile;

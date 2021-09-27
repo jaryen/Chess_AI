@@ -11,6 +11,7 @@ public class Tile : MonoBehaviour
     [SerializeField] public int col;
     private Color tileCol;
     private Piece currentPiece;
+    public bool isLight;
 
     // Start is called before the first frame update
     void Start()

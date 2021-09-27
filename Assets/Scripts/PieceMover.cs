@@ -9,7 +9,15 @@ public class PieceMover : GameManager
     [Header("Setup")]
     public Camera cam;
     public LayerMask tileMask;
-    
+
+    private Color lightTileCol = new Color(0.933f, 0.933f, 0.824f, 1);
+    private Color darkTileCol = new Color(0.463f, 0.588f, 0.337f, 1);
+
+    private Color selLightSquare = new Color(0.965f, 0.965f, 0.412f, 1);
+    private Color selDarkSquare = new Color(0.729f, 0.792f, 0.169f, 1);
+
+    private Color prevTileCol;
+
     [Header("During Game")]
     private Tile prevTile;
     private Tile selectedTile;
@@ -58,6 +66,18 @@ public class PieceMover : GameManager
                         selectedPiece.clearMoves(); // Clear the old selected piece's moves
                         selectedPiece = selectedTile.GetCurrentPiece();
                         selectedPiece.findMoves(selectedTile);
+
+                        // Highlight selected tile
+                        prevTile.GetComponent<SpriteRenderer>().color = prevTileCol;
+                        SpriteRenderer selectedTileSR = selectedTile.GetComponent<SpriteRenderer>();
+                        if (selectedTile.isLight)
+                        {
+                            selectedTileSR.color = selLightSquare;
+                        }
+                        else
+                        {
+                            selectedTileSR.color = selDarkSquare;
+                        }
                         prevTile = selectedTile;
                     }
                     // If newly selected tile is a valid tile AND has NO piece on it
@@ -80,6 +100,7 @@ public class PieceMover : GameManager
                     // set the selected piece as null
                     else
                     {
+                        SpriteRenderer selectedTileSR = selectedTile.GetComponent<SpriteRenderer>();
                         selectedPiece.clearMoves();
                         selectedPiece = null;
                     }
@@ -90,8 +111,20 @@ public class PieceMover : GameManager
                         (selectedTile.GetCurrentPiece().isWhite && currentTurn == turn.white || !selectedTile.GetCurrentPiece().isWhite && currentTurn == turn.black))
                     {
                         selectedPiece = selectedTile.GetCurrentPiece();
-                        selectedPiece.clearMoves(); // Clear the selected piece's moves
+                        selectedPiece.clearMoves();
                         selectedPiece.findMoves(selectedTile);
+
+                        // Highlight selected tile
+                        prevTileCol = selectedTile.GetColor();
+                        SpriteRenderer selectedTileSR = selectedTile.GetComponent<SpriteRenderer>();
+                        if (selectedTile.isLight)
+                        {
+                            selectedTileSR.color = selLightSquare;
+                        }
+                        else
+                        {
+                            selectedTileSR.color = selDarkSquare;
+                        }
                         prevTile = selectedTile;
                     }
                 }

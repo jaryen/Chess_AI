@@ -36,6 +36,11 @@ public abstract class Piece : BoardGeneration
         }
     }
 
+    public void HighlightSelectedPiece()
+    {
+        
+    }
+
     public abstract void findMoves(Tile tile);
 
     //moves the piece to the selected square, return true if successful, else return false
