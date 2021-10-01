@@ -23,7 +23,7 @@ public class GameManager : BoardGeneration
         //bGen = boardGeneratorObj.GetComponent<BoardGeneration>();
         currentTurn = turn.white;
         findAllPieces();
-        //udpateMoves();
+        udpateMoves();
     }
 
     //scan all 64 squares at the beginning of the game to fill whitePieces and blackPieces
@@ -74,6 +74,38 @@ public class GameManager : BoardGeneration
             currentTurn = turn.white;
         }
         udpateMoves();
+        searchForChecks();
+    }
+
+    //check for the opposite king's pieces in check
+    public void searchForChecks() { 
+        for (int r = 0; r < 8; r++) { //scan board
+            for (int c = 0; c < 8; c++) {
+
+                if (BoardGeneration.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece() != null) {   //there is a piece on this tile
+                    foreach (Tile tile in BoardGeneration.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece().validMoves) { //check to see if any piece is attacking the opposing king
+                        //check black king
+                        if (tile.GetCurrentPiece() != null &&
+                            BoardGeneration.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece().isWhite && 
+                            tile.GetCurrentPiece().name == "BlackKing(Clone)") 
+                        {
+                            Debug.Log("black king in check");
+                            break;
+                        }
+
+                        //check white king
+                        if (tile.GetCurrentPiece() != null && 
+                            !BoardGeneration.gameBoard[r, c].GetComponent<Tile>().GetCurrentPiece().isWhite && 
+                            tile.GetCurrentPiece().name == "WhiteKing(Clone)") 
+                        {
+                            Debug.Log("white king in check");
+                            break;
+                        }
+                    }
+                }
+
+            }
+        }
     }
 
     // Update is called once per frame
