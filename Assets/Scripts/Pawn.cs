@@ -24,10 +24,9 @@ public class Pawn : Piece
     //finds all possible moves
     public override void findMoves(Tile src) 
     {
-        Debug.Log("Pawn findMoves() called");
         //forward movement detection
         //pawns cannot move forward if a piece is blocking it
-        Tile forwardTile = boardGeneration.gameBoard[src.row + movementModifier, src.col].GetComponent<Tile>();
+        Tile forwardTile = BoardGeneration.gameBoard[src.row + movementModifier, src.col].GetComponent<Tile>();
         if (forwardTile.GetCurrentPiece() == null) {
             validMoves.Add(forwardTile);
         }
@@ -35,10 +34,10 @@ public class Pawn : Piece
         
         //intial pawn double move for white
         if (isWhite && src.row == 1) {
-            Tile forward1 = boardGeneration.gameBoard[src.row + 1, src.col].GetComponent<Tile>();
-            Tile forward2 = boardGeneration.gameBoard[src.row + 2, src.col].GetComponent<Tile>();
+            Tile forward1 = BoardGeneration.gameBoard[src.row + 1, src.col].GetComponent<Tile>();
+            Tile forward2 = BoardGeneration.gameBoard[src.row + 2, src.col].GetComponent<Tile>();
             if (forward1.GetCurrentPiece() == null && forward2.GetCurrentPiece() == null) {
-                Tile doubleForwardTile = boardGeneration.gameBoard[src.row + 2, src.col].GetComponent<Tile>();
+                Tile doubleForwardTile = BoardGeneration.gameBoard[src.row + 2, src.col].GetComponent<Tile>();
                 if (doubleForwardTile.GetCurrentPiece() == null || doubleForwardTile.GetCurrentPiece().isWhite != this.isWhite)
                 {
                     validMoves.Add(doubleForwardTile);
@@ -48,10 +47,10 @@ public class Pawn : Piece
 
                 //intial pawn double move for black
         if (!isWhite && src.row == 6) {
-            Tile forward1 = boardGeneration.gameBoard[src.row - 1, src.col].GetComponent<Tile>();
-            Tile forward2 = boardGeneration.gameBoard[src.row - 2, src.col].GetComponent<Tile>();
+            Tile forward1 = BoardGeneration.gameBoard[src.row - 1, src.col].GetComponent<Tile>();
+            Tile forward2 = BoardGeneration.gameBoard[src.row - 2, src.col].GetComponent<Tile>();
             if (forward1.GetCurrentPiece() == null && forward2.GetCurrentPiece() == null) {
-                Tile doubleForwardTile = boardGeneration.gameBoard[src.row - 2, src.col].GetComponent<Tile>();
+                Tile doubleForwardTile = BoardGeneration.gameBoard[src.row - 2, src.col].GetComponent<Tile>();
                 if (doubleForwardTile.GetCurrentPiece() == null || doubleForwardTile.GetCurrentPiece().isWhite != this.isWhite)
                 {
                     validMoves.Add(doubleForwardTile);
@@ -62,7 +61,7 @@ public class Pawn : Piece
         //left out of bounds detection
         //pawns can only move diagonally if there is a piece to be taken
         if (src.col - 1 >= 0) {
-            Tile leftForwardTile = boardGeneration.gameBoard[src.row + movementModifier, src.col - 1].GetComponent<Tile>();
+            Tile leftForwardTile = BoardGeneration.gameBoard[src.row + movementModifier, src.col - 1].GetComponent<Tile>();
             if (leftForwardTile.GetCurrentPiece() != null && leftForwardTile.GetCurrentPiece().isWhite != this.isWhite) {
                 validMoves.Add(leftForwardTile);
             }
@@ -71,7 +70,7 @@ public class Pawn : Piece
         //left out of bounds detection
         //pawns can only move diagonally if there is a piece to be taken
         if (src.col + 1 <= 7) {
-            Tile rightForwardTile = boardGeneration.gameBoard[src.row + movementModifier, src.col + 1].GetComponent<Tile>();
+            Tile rightForwardTile = BoardGeneration.gameBoard[src.row + movementModifier, src.col + 1].GetComponent<Tile>();
             if (rightForwardTile.GetCurrentPiece() != null && rightForwardTile.GetCurrentPiece().isWhite != this.isWhite) {
                 validMoves.Add(rightForwardTile);
             }

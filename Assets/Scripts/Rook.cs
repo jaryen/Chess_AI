@@ -16,16 +16,15 @@ public class Rook : Piece
     //finds all possible moves
     public override void findMoves(Tile src)
     {
-        Debug.Log(src.row + " " + src.col);
         // Forward movement
         checkRow = src.row + 1;
         if (checkOutOfBounds(checkRow, src.col))
         {
-            tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
+            tile = BoardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
             while (checkRow <= 7 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
-                tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
+                tile = BoardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
                 // if hit a piece in front
                 validMoves.Add(tile);
                 if(tile.GetCurrentPiece() != null){
@@ -34,7 +33,7 @@ public class Rook : Piece
                 checkRow++;
                 if (checkRow <= 7)
                 {
-                    tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
+                    tile = BoardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
                 }
             }
         }
@@ -43,11 +42,11 @@ public class Rook : Piece
         checkRow = src.row - 1;
         if (checkOutOfBounds(checkRow, src.col))
         {
-            tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
+            tile = BoardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
             while (checkRow >= 0 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
-                tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
+                tile = BoardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
                 // if hit a piece in front
                 validMoves.Add(tile);
                 if (tile.GetCurrentPiece() != null)
@@ -57,7 +56,7 @@ public class Rook : Piece
                 checkRow--;
                 if (checkRow >= 0)
                 {
-                    tile = boardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
+                    tile = BoardGeneration.gameBoard[checkRow, src.col].GetComponent<Tile>();
                 }
             }
         }
@@ -66,7 +65,7 @@ public class Rook : Piece
         checkCol = src.col + 1;
         if (checkOutOfBounds(src.row, checkCol))
         {
-            tile = boardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
+            tile = BoardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
             while (checkCol <= 7 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
@@ -77,7 +76,7 @@ public class Rook : Piece
                 }
                 checkCol++;
                 if (checkCol <= 7) {
-                    tile = boardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
+                    tile = BoardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
                 }
             }
         }
@@ -86,7 +85,7 @@ public class Rook : Piece
         checkCol = src.col - 1;
         if (checkOutOfBounds(src.row, checkCol))
         {
-            tile = boardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
+            tile = BoardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
             while (checkCol >= 0 && (tile.GetCurrentPiece() == null ||
                 tile.GetCurrentPiece().isWhite != this.isWhite))
             {
@@ -97,7 +96,7 @@ public class Rook : Piece
                 checkCol--;
                 if (checkCol >= 0)
                 {
-                    tile = boardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
+                    tile = BoardGeneration.gameBoard[src.row, checkCol].GetComponent<Tile>();
                 }
             }
         }        

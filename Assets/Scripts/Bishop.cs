@@ -20,7 +20,7 @@ public class Bishop : Piece
         checkRow = src.row + 1;
         checkCol = src.col - 1;
         if (checkOutOfBounds(checkRow, checkCol)) {
-            tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+            tile = BoardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
             while (checkRow <= 7 && checkCol >= 0 && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
@@ -32,7 +32,7 @@ public class Bishop : Piece
                 checkRow++;
                 checkCol--;
                 if (checkOutOfBounds(checkRow, checkCol)) {
-                    tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+                    tile = BoardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
                 }
             }
         }
@@ -41,7 +41,7 @@ public class Bishop : Piece
         checkRow = src.row + 1;
         checkCol = src.col + 1;
         if (checkOutOfBounds(checkRow, checkCol)) {
-            tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+            tile = BoardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
             while (checkRow <= 7 && checkCol <= 7 && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
@@ -54,7 +54,7 @@ public class Bishop : Piece
                 checkCol++;
                 if (checkOutOfBounds(checkRow, checkCol))
                 {
-                    tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+                    tile = BoardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
                 }
             }
         }        
@@ -63,7 +63,7 @@ public class Bishop : Piece
         checkRow = src.row - 1;
         checkCol = src.col - 1;
         if (checkOutOfBounds(checkRow, checkCol)) {
-            tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+            tile = BoardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
             while (checkRow >= 0 && checkCol >= 0 && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
@@ -76,7 +76,7 @@ public class Bishop : Piece
                 checkCol--;
                 if (checkOutOfBounds(checkRow, checkCol))
                 {
-                    tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+                    tile = BoardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
                 }
             }
         }        
@@ -85,7 +85,7 @@ public class Bishop : Piece
         checkRow = src.row - 1;
         checkCol = src.col + 1;
         if (checkOutOfBounds(checkRow, checkCol)) {
-            tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+            tile = BoardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
             while (checkRow >= 0 && checkCol <= 7 && (tile.GetCurrentPiece() == null ||
                    tile.GetCurrentPiece().isWhite != this.isWhite))
             {
@@ -98,7 +98,7 @@ public class Bishop : Piece
                 checkCol++;
                 if (checkOutOfBounds(checkRow, checkCol))
                 {
-                    tile = boardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
+                    tile = BoardGeneration.gameBoard[checkRow, checkCol].GetComponent<Tile>();
                 }
             }
         }    

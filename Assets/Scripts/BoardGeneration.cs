@@ -13,7 +13,7 @@ public class BoardGeneration : MonoBehaviour
     public Color lightSquareCol = new Color(0.933f, 0.933f, 0.824f, 1);
     public Color darkSquareCol = new Color(0.463f, 0.588f, 0.337f, 1);
 
-    public GameObject[,] gameBoard;    //2d array to store all tiles
+    public static GameObject[,] gameBoard;    //2d array to store all tiles
     public GameObject newTile;
 
     // Start is called before the first frame update

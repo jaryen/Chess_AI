@@ -16,7 +16,7 @@ public class Knight : Piece
     {
         if (src.row <= 5) { //knight can move up
             if (src.col > 0) {
-                tile = boardGeneration.gameBoard[src.row + 2, src.col - 1].GetComponent<Tile>();
+                tile = BoardGeneration.gameBoard[src.row + 2, src.col - 1].GetComponent<Tile>();
                 //check top left
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -27,7 +27,7 @@ public class Knight : Piece
 
             if (src.col < 7)
             {
-                tile = boardGeneration.gameBoard[src.row + 2, src.col + 1].GetComponent<Tile>();//check top right
+                tile = BoardGeneration.gameBoard[src.row + 2, src.col + 1].GetComponent<Tile>();//check top right
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
                 {
@@ -40,7 +40,7 @@ public class Knight : Piece
         if (src.row >= 2) { //knight can move down
             if (src.col > 0)
             {
-                tile = boardGeneration.gameBoard[src.row - 2, src.col - 1].GetComponent<Tile>();
+                tile = BoardGeneration.gameBoard[src.row - 2, src.col - 1].GetComponent<Tile>();
                 //check top left
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -51,7 +51,7 @@ public class Knight : Piece
 
             if (src.col < 7)
             {
-                tile = boardGeneration.gameBoard[src.row - 2, src.col + 1].GetComponent<Tile>();
+                tile = BoardGeneration.gameBoard[src.row - 2, src.col + 1].GetComponent<Tile>();
                 //check top left
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -64,7 +64,7 @@ public class Knight : Piece
         if (src.col <= 5) { //knight can move right
             if (src.row < 7)
             {
-                tile = boardGeneration.gameBoard[src.row + 1, src.col + 2].GetComponent<Tile>();
+                tile = BoardGeneration.gameBoard[src.row + 1, src.col + 2].GetComponent<Tile>();
                 //check right top
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -75,7 +75,7 @@ public class Knight : Piece
 
             if (src.row > 0)
             {
-                tile = boardGeneration.gameBoard[src.row - 1, src.col + 2].GetComponent<Tile>();
+                tile = BoardGeneration.gameBoard[src.row - 1, src.col + 2].GetComponent<Tile>();
                 //check right top
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -88,7 +88,7 @@ public class Knight : Piece
         if (src.col >= 2) { //knight can move left
             if (src.row < 7)
             {
-                tile = boardGeneration.gameBoard[src.row + 1, src.col - 2].GetComponent<Tile>();
+                tile = BoardGeneration.gameBoard[src.row + 1, src.col - 2].GetComponent<Tile>();
                 //check right top
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
@@ -99,7 +99,7 @@ public class Knight : Piece
 
             if (src.row > 0)
             {
-                tile = boardGeneration.gameBoard[src.row - 1, src.col - 2].GetComponent<Tile>();
+                tile = BoardGeneration.gameBoard[src.row - 1, src.col - 2].GetComponent<Tile>();
                 //check right top
                 if (tile.GetCurrentPiece() == null ||
                     tile.GetCurrentPiece().isWhite != this.isWhite)
