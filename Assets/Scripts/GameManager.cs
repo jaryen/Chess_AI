@@ -77,6 +77,15 @@ public class GameManager : BoardGeneration
         searchForChecks();
     }
 
+    public bool searchCheckBlocks(char side, Tile attackingPiece, Tile king) {
+        if (side == 'w') { 
+            //search for a block
+        }
+        else { 
+            //search for a block
+        }
+    }
+
     //check for the opposite king's pieces in check
     public void searchForChecks() { 
         for (int r = 0; r < 8; r++) { //scan board
@@ -90,6 +99,10 @@ public class GameManager : BoardGeneration
                             tile.GetCurrentPiece().name == "BlackKing(Clone)") 
                         {
                             Debug.Log("black king in check");
+                            if (!searchCheckBlocks('b', BoardGeneration.gameBoard[r, c].GetComponent<Tile>(), tile) && tile.GetCurrentPiece().validMoves.Count == 0) {
+                                //there are no ways to block the check and the king cant move out of check, this is a checkmate
+                                Debug.Log("Black checkamtes white");
+                            }
                             break;
                         }
 
@@ -99,6 +112,10 @@ public class GameManager : BoardGeneration
                             tile.GetCurrentPiece().name == "WhiteKing(Clone)") 
                         {
                             Debug.Log("white king in check");
+                            if (!searchCheckBlocks('w', BoardGeneration.gameBoard[r, c].GetComponent<Tile>(), tile) && tile.GetCurrentPiece().validMoves.Count == 0) {
+                                //there are no ways to block the check and the king cant move out of check, this is a checkmate
+                                Debug.Log("Black checkamtes white");
+                            }
                             break;
                         }
                     }
