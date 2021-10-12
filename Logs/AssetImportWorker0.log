@@ -371,3 +371,4 @@ Received Import Request.
 Start importing Assets/Scripts/GameManager.cs using Guid(16773bf2b5682e248b8a67c73f2d012d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952bfcad03504fa845c2b556870a7a9e') in 0.002005 seconds 
   Import took 0.005540 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

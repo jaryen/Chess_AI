@@ -91,6 +91,10 @@ public class King : Piece
     // Update is called once per frame
     void Update()
     {
-        
+        if (this.validMoves.Count == 0 && inCheck)
+        { //no more valid moves
+            //TODO: check for ways a piece can block a check
+            Application.Quit();
+        }
     }
 }
